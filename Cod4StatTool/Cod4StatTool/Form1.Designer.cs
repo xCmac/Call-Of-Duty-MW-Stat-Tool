@@ -80,9 +80,40 @@
             this.Tab_Humiliation = new System.Windows.Forms.TabPage();
             this.Tab_Elite = new System.Windows.Forms.TabPage();
             this.ProcessTimer = new System.Windows.Forms.Timer(this.components);
-            this.ReadMemory = new System.Windows.Forms.Button();
+            this.ReadMemoryButton = new System.Windows.Forms.Button();
+            this.Lablel_MP5_M = new System.Windows.Forms.Label();
+            this.Label_MP5_E = new System.Windows.Forms.Label();
+            this.Label_SKORP_M = new System.Windows.Forms.Label();
+            this.Label_SKORP_E = new System.Windows.Forms.Label();
+            this.Label_UZI_M = new System.Windows.Forms.Label();
+            this.Label_UZI_E = new System.Windows.Forms.Label();
+            this.Label_AK47U_M = new System.Windows.Forms.Label();
+            this.Label_AK47U_E = new System.Windows.Forms.Label();
+            this.Label_P90_M = new System.Windows.Forms.Label();
+            this.Label_P90_E = new System.Windows.Forms.Label();
+            this.Current_MP5_M = new System.Windows.Forms.Label();
+            this.Current_MP5_E = new System.Windows.Forms.Label();
+            this.Current_SKORP_M = new System.Windows.Forms.Label();
+            this.Current_SKORP_E = new System.Windows.Forms.Label();
+            this.Current_UZI_M = new System.Windows.Forms.Label();
+            this.Current_UZI_E = new System.Windows.Forms.Label();
+            this.Current_AK47U_M = new System.Windows.Forms.Label();
+            this.Current_AK47U_E = new System.Windows.Forms.Label();
+            this.Current_P90_M = new System.Windows.Forms.Label();
+            this.Current_P90_E = new System.Windows.Forms.Label();
+            this.TB_MP5_M = new System.Windows.Forms.TextBox();
+            this.TB_MP5_E = new System.Windows.Forms.TextBox();
+            this.TB_SKORP_M = new System.Windows.Forms.TextBox();
+            this.TB_SKORP_E = new System.Windows.Forms.TextBox();
+            this.TB_UZI_M = new System.Windows.Forms.TextBox();
+            this.TB_UZI_E = new System.Windows.Forms.TextBox();
+            this.TB_AK47U_M = new System.Windows.Forms.TextBox();
+            this.TB_AK47U_E = new System.Windows.Forms.TextBox();
+            this.TB_P90_M = new System.Windows.Forms.TextBox();
+            this.TB_P90_E = new System.Windows.Forms.TextBox();
             this.ChallengeTabs.SuspendLayout();
             this.Tab_Assault.SuspendLayout();
+            this.Tab_SMG.SuspendLayout();
             this.SuspendLayout();
             // 
             // Label_M16_M
@@ -507,6 +538,36 @@
             // 
             // Tab_SMG
             // 
+            this.Tab_SMG.Controls.Add(this.TB_P90_E);
+            this.Tab_SMG.Controls.Add(this.TB_P90_M);
+            this.Tab_SMG.Controls.Add(this.TB_AK47U_E);
+            this.Tab_SMG.Controls.Add(this.TB_AK47U_M);
+            this.Tab_SMG.Controls.Add(this.TB_UZI_E);
+            this.Tab_SMG.Controls.Add(this.TB_UZI_M);
+            this.Tab_SMG.Controls.Add(this.TB_SKORP_E);
+            this.Tab_SMG.Controls.Add(this.TB_SKORP_M);
+            this.Tab_SMG.Controls.Add(this.TB_MP5_E);
+            this.Tab_SMG.Controls.Add(this.TB_MP5_M);
+            this.Tab_SMG.Controls.Add(this.Current_P90_E);
+            this.Tab_SMG.Controls.Add(this.Current_P90_M);
+            this.Tab_SMG.Controls.Add(this.Current_AK47U_E);
+            this.Tab_SMG.Controls.Add(this.Current_AK47U_M);
+            this.Tab_SMG.Controls.Add(this.Current_UZI_E);
+            this.Tab_SMG.Controls.Add(this.Current_UZI_M);
+            this.Tab_SMG.Controls.Add(this.Current_SKORP_E);
+            this.Tab_SMG.Controls.Add(this.Current_SKORP_M);
+            this.Tab_SMG.Controls.Add(this.Current_MP5_E);
+            this.Tab_SMG.Controls.Add(this.Current_MP5_M);
+            this.Tab_SMG.Controls.Add(this.Label_P90_E);
+            this.Tab_SMG.Controls.Add(this.Label_P90_M);
+            this.Tab_SMG.Controls.Add(this.Label_AK47U_E);
+            this.Tab_SMG.Controls.Add(this.Label_AK47U_M);
+            this.Tab_SMG.Controls.Add(this.Label_UZI_E);
+            this.Tab_SMG.Controls.Add(this.Label_UZI_M);
+            this.Tab_SMG.Controls.Add(this.Label_SKORP_E);
+            this.Tab_SMG.Controls.Add(this.Label_SKORP_M);
+            this.Tab_SMG.Controls.Add(this.Label_MP5_E);
+            this.Tab_SMG.Controls.Add(this.Lablel_MP5_M);
             this.Tab_SMG.Location = new System.Drawing.Point(23, 4);
             this.Tab_SMG.Name = "Tab_SMG";
             this.Tab_SMG.Padding = new System.Windows.Forms.Padding(3);
@@ -594,15 +655,285 @@
             this.ProcessTimer.Interval = 10;
             this.ProcessTimer.Tick += new System.EventHandler(this.ProcessTimer_Tick);
             // 
-            // ReadMemory
+            // ReadMemoryButton
             // 
-            this.ReadMemory.Location = new System.Drawing.Point(12, 553);
-            this.ReadMemory.Name = "ReadMemory";
-            this.ReadMemory.Size = new System.Drawing.Size(357, 49);
-            this.ReadMemory.TabIndex = 38;
-            this.ReadMemory.Text = "Read Memory";
-            this.ReadMemory.UseVisualStyleBackColor = true;
-            this.ReadMemory.Click += new System.EventHandler(this.ReadMemory_Click);
+            this.ReadMemoryButton.Location = new System.Drawing.Point(12, 553);
+            this.ReadMemoryButton.Name = "ReadMemoryButton";
+            this.ReadMemoryButton.Size = new System.Drawing.Size(357, 49);
+            this.ReadMemoryButton.TabIndex = 38;
+            this.ReadMemoryButton.Text = "Read Memory";
+            this.ReadMemoryButton.UseVisualStyleBackColor = true;
+            this.ReadMemoryButton.Click += new System.EventHandler(this.ReadMemory_Click);
+            // 
+            // Lablel_MP5_M
+            // 
+            this.Lablel_MP5_M.AutoSize = true;
+            this.Lablel_MP5_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Lablel_MP5_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lablel_MP5_M.Location = new System.Drawing.Point(6, 3);
+            this.Lablel_MP5_M.Name = "Lablel_MP5_M";
+            this.Lablel_MP5_M.Size = new System.Drawing.Size(140, 24);
+            this.Lablel_MP5_M.TabIndex = 14;
+            this.Lablel_MP5_M.Text = "MP5 Marksman";
+            // 
+            // Label_MP5_E
+            // 
+            this.Label_MP5_E.AutoSize = true;
+            this.Label_MP5_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_MP5_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_MP5_E.Location = new System.Drawing.Point(6, 27);
+            this.Label_MP5_E.Name = "Label_MP5_E";
+            this.Label_MP5_E.Size = new System.Drawing.Size(108, 24);
+            this.Label_MP5_E.TabIndex = 15;
+            this.Label_MP5_E.Text = "MP5 Expert";
+            // 
+            // Label_SKORP_M
+            // 
+            this.Label_SKORP_M.AutoSize = true;
+            this.Label_SKORP_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_SKORP_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_SKORP_M.Location = new System.Drawing.Point(6, 60);
+            this.Label_SKORP_M.Name = "Label_SKORP_M";
+            this.Label_SKORP_M.Size = new System.Drawing.Size(177, 24);
+            this.Label_SKORP_M.TabIndex = 16;
+            this.Label_SKORP_M.Text = "Skorpion Marksman";
+            // 
+            // Label_SKORP_E
+            // 
+            this.Label_SKORP_E.AutoSize = true;
+            this.Label_SKORP_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_SKORP_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_SKORP_E.Location = new System.Drawing.Point(6, 84);
+            this.Label_SKORP_E.Name = "Label_SKORP_E";
+            this.Label_SKORP_E.Size = new System.Drawing.Size(145, 24);
+            this.Label_SKORP_E.TabIndex = 17;
+            this.Label_SKORP_E.Text = "Skorpion Expert";
+            // 
+            // Label_UZI_M
+            // 
+            this.Label_UZI_M.AutoSize = true;
+            this.Label_UZI_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_UZI_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_UZI_M.Location = new System.Drawing.Point(6, 118);
+            this.Label_UZI_M.Name = "Label_UZI_M";
+            this.Label_UZI_M.Size = new System.Drawing.Size(168, 24);
+            this.Label_UZI_M.TabIndex = 18;
+            this.Label_UZI_M.Text = "Mini Uzi Marksman";
+            // 
+            // Label_UZI_E
+            // 
+            this.Label_UZI_E.AutoSize = true;
+            this.Label_UZI_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_UZI_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_UZI_E.Location = new System.Drawing.Point(6, 142);
+            this.Label_UZI_E.Name = "Label_UZI_E";
+            this.Label_UZI_E.Size = new System.Drawing.Size(136, 24);
+            this.Label_UZI_E.TabIndex = 19;
+            this.Label_UZI_E.Text = "Mini Uzi Expert";
+            // 
+            // Label_AK47U_M
+            // 
+            this.Label_AK47U_M.AutoSize = true;
+            this.Label_AK47U_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_AK47U_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_AK47U_M.Location = new System.Drawing.Point(6, 175);
+            this.Label_AK47U_M.Name = "Label_AK47U_M";
+            this.Label_AK47U_M.Size = new System.Drawing.Size(160, 24);
+            this.Label_AK47U_M.TabIndex = 20;
+            this.Label_AK47U_M.Text = "AK47U Marksman";
+            // 
+            // Label_AK47U_E
+            // 
+            this.Label_AK47U_E.AutoSize = true;
+            this.Label_AK47U_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_AK47U_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_AK47U_E.Location = new System.Drawing.Point(6, 199);
+            this.Label_AK47U_E.Name = "Label_AK47U_E";
+            this.Label_AK47U_E.Size = new System.Drawing.Size(128, 24);
+            this.Label_AK47U_E.TabIndex = 21;
+            this.Label_AK47U_E.Text = "AK47U Expert";
+            // 
+            // Label_P90_M
+            // 
+            this.Label_P90_M.AutoSize = true;
+            this.Label_P90_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_P90_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_P90_M.Location = new System.Drawing.Point(6, 232);
+            this.Label_P90_M.Name = "Label_P90_M";
+            this.Label_P90_M.Size = new System.Drawing.Size(134, 24);
+            this.Label_P90_M.TabIndex = 22;
+            this.Label_P90_M.Text = "P90 Marksman";
+            // 
+            // Label_P90_E
+            // 
+            this.Label_P90_E.AutoSize = true;
+            this.Label_P90_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_P90_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_P90_E.Location = new System.Drawing.Point(6, 256);
+            this.Label_P90_E.Name = "Label_P90_E";
+            this.Label_P90_E.Size = new System.Drawing.Size(102, 24);
+            this.Label_P90_E.TabIndex = 23;
+            this.Label_P90_E.Text = "P90 Expert";
+            // 
+            // Current_MP5_M
+            // 
+            this.Current_MP5_M.AutoSize = true;
+            this.Current_MP5_M.Location = new System.Drawing.Point(185, 11);
+            this.Current_MP5_M.Name = "Current_MP5_M";
+            this.Current_MP5_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_MP5_M.TabIndex = 26;
+            this.Current_MP5_M.Text = "?";
+            // 
+            // Current_MP5_E
+            // 
+            this.Current_MP5_E.AutoSize = true;
+            this.Current_MP5_E.Location = new System.Drawing.Point(185, 35);
+            this.Current_MP5_E.Name = "Current_MP5_E";
+            this.Current_MP5_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_MP5_E.TabIndex = 27;
+            this.Current_MP5_E.Text = "?";
+            // 
+            // Current_SKORP_M
+            // 
+            this.Current_SKORP_M.AutoSize = true;
+            this.Current_SKORP_M.Location = new System.Drawing.Point(185, 68);
+            this.Current_SKORP_M.Name = "Current_SKORP_M";
+            this.Current_SKORP_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_SKORP_M.TabIndex = 28;
+            this.Current_SKORP_M.Text = "?";
+            // 
+            // Current_SKORP_E
+            // 
+            this.Current_SKORP_E.AutoSize = true;
+            this.Current_SKORP_E.Location = new System.Drawing.Point(185, 92);
+            this.Current_SKORP_E.Name = "Current_SKORP_E";
+            this.Current_SKORP_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_SKORP_E.TabIndex = 29;
+            this.Current_SKORP_E.Text = "?";
+            // 
+            // Current_UZI_M
+            // 
+            this.Current_UZI_M.AutoSize = true;
+            this.Current_UZI_M.Location = new System.Drawing.Point(185, 126);
+            this.Current_UZI_M.Name = "Current_UZI_M";
+            this.Current_UZI_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_UZI_M.TabIndex = 30;
+            this.Current_UZI_M.Text = "?";
+            // 
+            // Current_UZI_E
+            // 
+            this.Current_UZI_E.AutoSize = true;
+            this.Current_UZI_E.Location = new System.Drawing.Point(185, 150);
+            this.Current_UZI_E.Name = "Current_UZI_E";
+            this.Current_UZI_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_UZI_E.TabIndex = 31;
+            this.Current_UZI_E.Text = "?";
+            // 
+            // Current_AK47U_M
+            // 
+            this.Current_AK47U_M.AutoSize = true;
+            this.Current_AK47U_M.Location = new System.Drawing.Point(185, 183);
+            this.Current_AK47U_M.Name = "Current_AK47U_M";
+            this.Current_AK47U_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_AK47U_M.TabIndex = 32;
+            this.Current_AK47U_M.Text = "?";
+            // 
+            // Current_AK47U_E
+            // 
+            this.Current_AK47U_E.AutoSize = true;
+            this.Current_AK47U_E.Location = new System.Drawing.Point(185, 207);
+            this.Current_AK47U_E.Name = "Current_AK47U_E";
+            this.Current_AK47U_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_AK47U_E.TabIndex = 33;
+            this.Current_AK47U_E.Text = "?";
+            // 
+            // Current_P90_M
+            // 
+            this.Current_P90_M.AutoSize = true;
+            this.Current_P90_M.Location = new System.Drawing.Point(185, 240);
+            this.Current_P90_M.Name = "Current_P90_M";
+            this.Current_P90_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_P90_M.TabIndex = 34;
+            this.Current_P90_M.Text = "?";
+            // 
+            // Current_P90_E
+            // 
+            this.Current_P90_E.AutoSize = true;
+            this.Current_P90_E.Location = new System.Drawing.Point(185, 264);
+            this.Current_P90_E.Name = "Current_P90_E";
+            this.Current_P90_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_P90_E.TabIndex = 35;
+            this.Current_P90_E.Text = "?";
+            // 
+            // TB_MP5_M
+            // 
+            this.TB_MP5_M.Location = new System.Drawing.Point(228, 8);
+            this.TB_MP5_M.Name = "TB_MP5_M";
+            this.TB_MP5_M.Size = new System.Drawing.Size(100, 20);
+            this.TB_MP5_M.TabIndex = 38;
+            // 
+            // TB_MP5_E
+            // 
+            this.TB_MP5_E.Location = new System.Drawing.Point(228, 32);
+            this.TB_MP5_E.Name = "TB_MP5_E";
+            this.TB_MP5_E.Size = new System.Drawing.Size(100, 20);
+            this.TB_MP5_E.TabIndex = 39;
+            // 
+            // TB_SKORP_M
+            // 
+            this.TB_SKORP_M.Location = new System.Drawing.Point(228, 65);
+            this.TB_SKORP_M.Name = "TB_SKORP_M";
+            this.TB_SKORP_M.Size = new System.Drawing.Size(100, 20);
+            this.TB_SKORP_M.TabIndex = 40;
+            // 
+            // TB_SKORP_E
+            // 
+            this.TB_SKORP_E.Location = new System.Drawing.Point(228, 89);
+            this.TB_SKORP_E.Name = "TB_SKORP_E";
+            this.TB_SKORP_E.Size = new System.Drawing.Size(100, 20);
+            this.TB_SKORP_E.TabIndex = 41;
+            // 
+            // TB_UZI_M
+            // 
+            this.TB_UZI_M.Location = new System.Drawing.Point(228, 123);
+            this.TB_UZI_M.Name = "TB_UZI_M";
+            this.TB_UZI_M.Size = new System.Drawing.Size(100, 20);
+            this.TB_UZI_M.TabIndex = 42;
+            // 
+            // TB_UZI_E
+            // 
+            this.TB_UZI_E.Location = new System.Drawing.Point(228, 147);
+            this.TB_UZI_E.Name = "TB_UZI_E";
+            this.TB_UZI_E.Size = new System.Drawing.Size(100, 20);
+            this.TB_UZI_E.TabIndex = 43;
+            // 
+            // TB_AK47U_M
+            // 
+            this.TB_AK47U_M.Location = new System.Drawing.Point(228, 180);
+            this.TB_AK47U_M.Name = "TB_AK47U_M";
+            this.TB_AK47U_M.Size = new System.Drawing.Size(100, 20);
+            this.TB_AK47U_M.TabIndex = 44;
+            // 
+            // TB_AK47U_E
+            // 
+            this.TB_AK47U_E.Location = new System.Drawing.Point(228, 204);
+            this.TB_AK47U_E.Name = "TB_AK47U_E";
+            this.TB_AK47U_E.Size = new System.Drawing.Size(100, 20);
+            this.TB_AK47U_E.TabIndex = 45;
+            // 
+            // TB_P90_M
+            // 
+            this.TB_P90_M.Location = new System.Drawing.Point(228, 237);
+            this.TB_P90_M.Name = "TB_P90_M";
+            this.TB_P90_M.Size = new System.Drawing.Size(100, 20);
+            this.TB_P90_M.TabIndex = 46;
+            // 
+            // TB_P90_E
+            // 
+            this.TB_P90_E.Location = new System.Drawing.Point(228, 261);
+            this.TB_P90_E.Name = "TB_P90_E";
+            this.TB_P90_E.Size = new System.Drawing.Size(100, 20);
+            this.TB_P90_E.TabIndex = 47;
             // 
             // Form1
             // 
@@ -611,13 +942,15 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(385, 614);
-            this.Controls.Add(this.ReadMemory);
+            this.Controls.Add(this.ReadMemoryButton);
             this.Controls.Add(this.ChallengeTabs);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ChallengeTabs.ResumeLayout(false);
             this.Tab_Assault.ResumeLayout(false);
             this.Tab_Assault.PerformLayout();
+            this.Tab_SMG.ResumeLayout(false);
+            this.Tab_SMG.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -675,7 +1008,37 @@
         private System.Windows.Forms.Label Current_M16_E;
         private System.Windows.Forms.Label Current_M16_M;
         private System.Windows.Forms.Timer ProcessTimer;
-        private System.Windows.Forms.Button ReadMemory;
+        private System.Windows.Forms.Button ReadMemoryButton;
+        private System.Windows.Forms.Label Lablel_MP5_M;
+        private System.Windows.Forms.Label Label_P90_E;
+        private System.Windows.Forms.Label Label_P90_M;
+        private System.Windows.Forms.Label Label_AK47U_E;
+        private System.Windows.Forms.Label Label_AK47U_M;
+        private System.Windows.Forms.Label Label_UZI_E;
+        private System.Windows.Forms.Label Label_UZI_M;
+        private System.Windows.Forms.Label Label_SKORP_E;
+        private System.Windows.Forms.Label Label_SKORP_M;
+        private System.Windows.Forms.Label Label_MP5_E;
+        private System.Windows.Forms.Label Current_P90_E;
+        private System.Windows.Forms.Label Current_P90_M;
+        private System.Windows.Forms.Label Current_AK47U_E;
+        private System.Windows.Forms.Label Current_AK47U_M;
+        private System.Windows.Forms.Label Current_UZI_E;
+        private System.Windows.Forms.Label Current_UZI_M;
+        private System.Windows.Forms.Label Current_SKORP_E;
+        private System.Windows.Forms.Label Current_SKORP_M;
+        private System.Windows.Forms.Label Current_MP5_E;
+        private System.Windows.Forms.Label Current_MP5_M;
+        private System.Windows.Forms.TextBox TB_P90_E;
+        private System.Windows.Forms.TextBox TB_P90_M;
+        private System.Windows.Forms.TextBox TB_AK47U_E;
+        private System.Windows.Forms.TextBox TB_AK47U_M;
+        private System.Windows.Forms.TextBox TB_UZI_E;
+        private System.Windows.Forms.TextBox TB_UZI_M;
+        private System.Windows.Forms.TextBox TB_SKORP_E;
+        private System.Windows.Forms.TextBox TB_SKORP_M;
+        private System.Windows.Forms.TextBox TB_MP5_E;
+        private System.Windows.Forms.TextBox TB_MP5_M;
     }
 }
 

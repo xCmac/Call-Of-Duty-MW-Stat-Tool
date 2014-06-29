@@ -117,20 +117,26 @@ namespace Cod4StatTool
         {
             Current_M16_M.Text = MemoryReader.ReadUInt(BaseAddress + m16_marksman).ToString();
             Current_M16_E.Text = MemoryReader.ReadUInt(BaseAddress + m16_expert).ToString();
-
             Current_AK47_M.Text = MemoryReader.ReadUInt(BaseAddress + ak47_marksman).ToString();
             Current_AK47_E.Text = MemoryReader.ReadUInt(BaseAddress + ak47_expert).ToString();
-
             Current_G3_M.Text = MemoryReader.ReadUInt(BaseAddress + g3_marksman).ToString();
             Current_G3_E.Text = MemoryReader.ReadUInt(BaseAddress + g3_expert).ToString();
-
             Current_M4_M.Text = MemoryReader.ReadUInt(BaseAddress + m4_marksman).ToString();
             Current_M4_E.Text = MemoryReader.ReadUInt(BaseAddress + m4_expert).ToString();
+            //Current_G36C_M.Text = MemoryReader.ReadUInt(BaseAddress + g36c_marksman).ToString();
+            //Current_G36C_E.Text = MemoryReader.ReadUInt(BaseAddress + g36c_expert).ToString();
+            //Current_MP44_E.Text = MemoryReader.ReadUInt(BaseAddress + mp44_expert).ToString();
 
-            //Current_G36C_M.Text = MemoryReader.ReadUInt(g36c_marksman).ToString();
-            //Current_G36C_E.Text = MemoryReader.ReadUInt(g36c_expert).ToString();
-
-            //Current_MP44_E.Text = MemoryReader.ReadUInt(mp44_expert).ToString();
+            Current_MP5_M.Text = MemoryReader.ReadUInt(BaseAddress + mp5_marksman).ToString();
+            Current_MP5_E.Text = MemoryReader.ReadUInt(BaseAddress + mp5_expert).ToString();
+            Current_SKORP_M.Text = MemoryReader.ReadUInt(BaseAddress + skoprion_marksman).ToString();
+            Current_SKORP_E.Text = MemoryReader.ReadUInt(BaseAddress + skoprion_expert).ToString();
+            Current_UZI_M.Text = MemoryReader.ReadUInt(BaseAddress + miniuzi_marksman).ToString();
+            Current_UZI_E.Text = MemoryReader.ReadUInt(BaseAddress + miniuzi_expert).ToString();
+            Current_AK47U_M.Text = MemoryReader.ReadUInt(BaseAddress + ak74u_marksman).ToString();
+            Current_AK47U_E.Text = MemoryReader.ReadUInt(BaseAddress + aK74u_expert).ToString();
+            //Current_P90_M.Text = MemoryReader.ReadUInt(BaseAddress + p90_marksman).ToString();
+            //Current_P90_E.Text = MemoryReader.ReadUInt(BaseAddress + p90_expert).ToString();
         }
 
         private void ReadMemory_Click(object sender, EventArgs e)
@@ -150,7 +156,7 @@ namespace Cod4StatTool
                 MessageBox.Show("Could not read process " + exception.Message);
             }
 
-            ReadMemory.Enabled = false;
+            ReadMemoryButton.Enabled = false;
         }
     }
 }
