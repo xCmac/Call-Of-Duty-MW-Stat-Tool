@@ -137,6 +137,13 @@ namespace Cod4StatTool
             Current_AK47U_E.Text = MemoryReader.ReadUInt(BaseAddress + aK74u_expert).ToString();
             //Current_P90_M.Text = MemoryReader.ReadUInt(BaseAddress + p90_marksman).ToString();
             //Current_P90_E.Text = MemoryReader.ReadUInt(BaseAddress + p90_expert).ToString();
+
+            Current_M249_M.Text = MemoryReader.ReadUInt(BaseAddress + m249_marksman).ToString();
+            Current_M249_E.Text = MemoryReader.ReadUInt(BaseAddress + m249_expert).ToString();
+            Current_RPD_M.Text = MemoryReader.ReadUInt(BaseAddress + rpd_marksman).ToString();
+            Current_RPD_E.Text = MemoryReader.ReadUInt(BaseAddress + rpd_expert).ToString();
+            Current_M60E4_M.Text = MemoryReader.ReadUInt(BaseAddress + m60e4_marksman).ToString();
+            Current_M60E4_E.Text = MemoryReader.ReadUInt(BaseAddress + m60e4_expert).ToString();
         }
 
         private void ReadMemory_Click(object sender, EventArgs e)

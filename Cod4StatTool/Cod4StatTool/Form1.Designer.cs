@@ -111,9 +111,28 @@
             this.TB_AK47U_E = new System.Windows.Forms.TextBox();
             this.TB_P90_M = new System.Windows.Forms.TextBox();
             this.TB_P90_E = new System.Windows.Forms.TextBox();
+            this.Lable_M249_M = new System.Windows.Forms.Label();
+            this.Label_M249_E = new System.Windows.Forms.Label();
+            this.Label_RPD_M = new System.Windows.Forms.Label();
+            this.Label_RPD_E = new System.Windows.Forms.Label();
+            this.Label_M60E4_M = new System.Windows.Forms.Label();
+            this.Label_M60E4_E = new System.Windows.Forms.Label();
+            this.Current_M60E4_M = new System.Windows.Forms.Label();
+            this.Current_M60E4_E = new System.Windows.Forms.Label();
+            this.Current_RPD_E = new System.Windows.Forms.Label();
+            this.Current_M249_M = new System.Windows.Forms.Label();
+            this.Current_M249_E = new System.Windows.Forms.Label();
+            this.Current_RPD_M = new System.Windows.Forms.Label();
+            this.TB_M249_M = new System.Windows.Forms.TextBox();
+            this.TB_M60E4_E = new System.Windows.Forms.TextBox();
+            this.TB_M60E4_M = new System.Windows.Forms.TextBox();
+            this.TB_RPD_E = new System.Windows.Forms.TextBox();
+            this.TB_RPD_M = new System.Windows.Forms.TextBox();
+            this.TB_M249_E = new System.Windows.Forms.TextBox();
             this.ChallengeTabs.SuspendLayout();
             this.Tab_Assault.SuspendLayout();
             this.Tab_SMG.SuspendLayout();
+            this.Tab_LMG.SuspendLayout();
             this.SuspendLayout();
             // 
             // Label_M16_M
@@ -177,7 +196,7 @@
             this.ChallengeTabs.Multiline = true;
             this.ChallengeTabs.Name = "ChallengeTabs";
             this.ChallengeTabs.SelectedIndex = 0;
-            this.ChallengeTabs.Size = new System.Drawing.Size(361, 534);
+            this.ChallengeTabs.Size = new System.Drawing.Size(361, 519);
             this.ChallengeTabs.TabIndex = 5;
             // 
             // Tab_Assault
@@ -225,7 +244,7 @@
             this.Tab_Assault.Location = new System.Drawing.Point(23, 4);
             this.Tab_Assault.Name = "Tab_Assault";
             this.Tab_Assault.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_Assault.Size = new System.Drawing.Size(334, 526);
+            this.Tab_Assault.Size = new System.Drawing.Size(334, 511);
             this.Tab_Assault.TabIndex = 0;
             this.Tab_Assault.Text = "Assault";
             // 
@@ -571,16 +590,34 @@
             this.Tab_SMG.Location = new System.Drawing.Point(23, 4);
             this.Tab_SMG.Name = "Tab_SMG";
             this.Tab_SMG.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_SMG.Size = new System.Drawing.Size(334, 526);
+            this.Tab_SMG.Size = new System.Drawing.Size(334, 466);
             this.Tab_SMG.TabIndex = 1;
             this.Tab_SMG.Text = "SMG";
             this.Tab_SMG.UseVisualStyleBackColor = true;
             // 
             // Tab_LMG
             // 
+            this.Tab_LMG.Controls.Add(this.TB_M249_E);
+            this.Tab_LMG.Controls.Add(this.TB_RPD_M);
+            this.Tab_LMG.Controls.Add(this.TB_RPD_E);
+            this.Tab_LMG.Controls.Add(this.TB_M60E4_M);
+            this.Tab_LMG.Controls.Add(this.TB_M60E4_E);
+            this.Tab_LMG.Controls.Add(this.TB_M249_M);
+            this.Tab_LMG.Controls.Add(this.Current_RPD_M);
+            this.Tab_LMG.Controls.Add(this.Current_M249_E);
+            this.Tab_LMG.Controls.Add(this.Current_M249_M);
+            this.Tab_LMG.Controls.Add(this.Current_RPD_E);
+            this.Tab_LMG.Controls.Add(this.Current_M60E4_E);
+            this.Tab_LMG.Controls.Add(this.Current_M60E4_M);
+            this.Tab_LMG.Controls.Add(this.Label_M60E4_E);
+            this.Tab_LMG.Controls.Add(this.Label_M60E4_M);
+            this.Tab_LMG.Controls.Add(this.Label_RPD_E);
+            this.Tab_LMG.Controls.Add(this.Label_RPD_M);
+            this.Tab_LMG.Controls.Add(this.Label_M249_E);
+            this.Tab_LMG.Controls.Add(this.Lable_M249_M);
             this.Tab_LMG.Location = new System.Drawing.Point(23, 4);
             this.Tab_LMG.Name = "Tab_LMG";
-            this.Tab_LMG.Size = new System.Drawing.Size(334, 526);
+            this.Tab_LMG.Size = new System.Drawing.Size(334, 466);
             this.Tab_LMG.TabIndex = 2;
             this.Tab_LMG.Text = "LMG";
             this.Tab_LMG.UseVisualStyleBackColor = true;
@@ -589,7 +626,7 @@
             // 
             this.Tab_Shotgun.Location = new System.Drawing.Point(23, 4);
             this.Tab_Shotgun.Name = "Tab_Shotgun";
-            this.Tab_Shotgun.Size = new System.Drawing.Size(334, 526);
+            this.Tab_Shotgun.Size = new System.Drawing.Size(334, 466);
             this.Tab_Shotgun.TabIndex = 3;
             this.Tab_Shotgun.Text = "Shotgun";
             this.Tab_Shotgun.UseVisualStyleBackColor = true;
@@ -598,7 +635,7 @@
             // 
             this.Tab_Sniper.Location = new System.Drawing.Point(23, 4);
             this.Tab_Sniper.Name = "Tab_Sniper";
-            this.Tab_Sniper.Size = new System.Drawing.Size(334, 526);
+            this.Tab_Sniper.Size = new System.Drawing.Size(334, 466);
             this.Tab_Sniper.TabIndex = 4;
             this.Tab_Sniper.Text = "Sniper";
             this.Tab_Sniper.UseVisualStyleBackColor = true;
@@ -608,7 +645,7 @@
             this.Tab_BootCamp.Location = new System.Drawing.Point(23, 4);
             this.Tab_BootCamp.Name = "Tab_BootCamp";
             this.Tab_BootCamp.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_BootCamp.Size = new System.Drawing.Size(334, 526);
+            this.Tab_BootCamp.Size = new System.Drawing.Size(334, 466);
             this.Tab_BootCamp.TabIndex = 5;
             this.Tab_BootCamp.Text = "Boot Camp";
             this.Tab_BootCamp.UseVisualStyleBackColor = true;
@@ -617,7 +654,7 @@
             // 
             this.Tab_Operations.Location = new System.Drawing.Point(23, 4);
             this.Tab_Operations.Name = "Tab_Operations";
-            this.Tab_Operations.Size = new System.Drawing.Size(334, 526);
+            this.Tab_Operations.Size = new System.Drawing.Size(334, 466);
             this.Tab_Operations.TabIndex = 6;
             this.Tab_Operations.Text = "Operations";
             this.Tab_Operations.UseVisualStyleBackColor = true;
@@ -626,25 +663,25 @@
             // 
             this.Tab_Killer.Location = new System.Drawing.Point(23, 4);
             this.Tab_Killer.Name = "Tab_Killer";
-            this.Tab_Killer.Size = new System.Drawing.Size(334, 526);
+            this.Tab_Killer.Size = new System.Drawing.Size(334, 466);
             this.Tab_Killer.TabIndex = 7;
             this.Tab_Killer.Text = "Killer";
             this.Tab_Killer.UseVisualStyleBackColor = true;
             // 
             // Tab_Humiliation
             // 
-            this.Tab_Humiliation.Location = new System.Drawing.Point(23, 4);
+            this.Tab_Humiliation.Location = new System.Drawing.Point(42, 4);
             this.Tab_Humiliation.Name = "Tab_Humiliation";
-            this.Tab_Humiliation.Size = new System.Drawing.Size(334, 526);
+            this.Tab_Humiliation.Size = new System.Drawing.Size(315, 466);
             this.Tab_Humiliation.TabIndex = 8;
             this.Tab_Humiliation.Text = "Humiliation";
             this.Tab_Humiliation.UseVisualStyleBackColor = true;
             // 
             // Tab_Elite
             // 
-            this.Tab_Elite.Location = new System.Drawing.Point(23, 4);
+            this.Tab_Elite.Location = new System.Drawing.Point(42, 4);
             this.Tab_Elite.Name = "Tab_Elite";
-            this.Tab_Elite.Size = new System.Drawing.Size(334, 526);
+            this.Tab_Elite.Size = new System.Drawing.Size(315, 466);
             this.Tab_Elite.TabIndex = 9;
             this.Tab_Elite.Text = "Elite";
             this.Tab_Elite.UseVisualStyleBackColor = true;
@@ -935,6 +972,168 @@
             this.TB_P90_E.Size = new System.Drawing.Size(100, 20);
             this.TB_P90_E.TabIndex = 47;
             // 
+            // Lable_M249_M
+            // 
+            this.Lable_M249_M.AutoSize = true;
+            this.Lable_M249_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Lable_M249_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lable_M249_M.Location = new System.Drawing.Point(14, 11);
+            this.Lable_M249_M.Name = "Lable_M249_M";
+            this.Lable_M249_M.Size = new System.Drawing.Size(148, 24);
+            this.Lable_M249_M.TabIndex = 24;
+            this.Lable_M249_M.Text = "M249 Marksman";
+            // 
+            // Label_M249_E
+            // 
+            this.Label_M249_E.AutoSize = true;
+            this.Label_M249_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_M249_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_M249_E.Location = new System.Drawing.Point(14, 35);
+            this.Label_M249_E.Name = "Label_M249_E";
+            this.Label_M249_E.Size = new System.Drawing.Size(116, 24);
+            this.Label_M249_E.TabIndex = 25;
+            this.Label_M249_E.Text = "M249 Expert";
+            // 
+            // Label_RPD_M
+            // 
+            this.Label_RPD_M.AutoSize = true;
+            this.Label_RPD_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_RPD_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_RPD_M.Location = new System.Drawing.Point(14, 69);
+            this.Label_RPD_M.Name = "Label_RPD_M";
+            this.Label_RPD_M.Size = new System.Drawing.Size(140, 24);
+            this.Label_RPD_M.TabIndex = 26;
+            this.Label_RPD_M.Text = "RPD Marksman";
+            // 
+            // Label_RPD_E
+            // 
+            this.Label_RPD_E.AutoSize = true;
+            this.Label_RPD_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_RPD_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_RPD_E.Location = new System.Drawing.Point(14, 93);
+            this.Label_RPD_E.Name = "Label_RPD_E";
+            this.Label_RPD_E.Size = new System.Drawing.Size(108, 24);
+            this.Label_RPD_E.TabIndex = 27;
+            this.Label_RPD_E.Text = "RPD Expert";
+            // 
+            // Label_M60E4_M
+            // 
+            this.Label_M60E4_M.AutoSize = true;
+            this.Label_M60E4_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_M60E4_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_M60E4_M.Location = new System.Drawing.Point(14, 126);
+            this.Label_M60E4_M.Name = "Label_M60E4_M";
+            this.Label_M60E4_M.Size = new System.Drawing.Size(161, 24);
+            this.Label_M60E4_M.TabIndex = 28;
+            this.Label_M60E4_M.Text = "M60E4 Marksman";
+            // 
+            // Label_M60E4_E
+            // 
+            this.Label_M60E4_E.AutoSize = true;
+            this.Label_M60E4_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_M60E4_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_M60E4_E.Location = new System.Drawing.Point(14, 150);
+            this.Label_M60E4_E.Name = "Label_M60E4_E";
+            this.Label_M60E4_E.Size = new System.Drawing.Size(129, 24);
+            this.Label_M60E4_E.TabIndex = 29;
+            this.Label_M60E4_E.Text = "M60E4 Expert";
+            // 
+            // Current_M60E4_M
+            // 
+            this.Current_M60E4_M.AutoSize = true;
+            this.Current_M60E4_M.Location = new System.Drawing.Point(181, 134);
+            this.Current_M60E4_M.Name = "Current_M60E4_M";
+            this.Current_M60E4_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_M60E4_M.TabIndex = 36;
+            this.Current_M60E4_M.Text = "?";
+            // 
+            // Current_M60E4_E
+            // 
+            this.Current_M60E4_E.AutoSize = true;
+            this.Current_M60E4_E.Location = new System.Drawing.Point(181, 158);
+            this.Current_M60E4_E.Name = "Current_M60E4_E";
+            this.Current_M60E4_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_M60E4_E.TabIndex = 37;
+            this.Current_M60E4_E.Text = "?";
+            // 
+            // Current_RPD_E
+            // 
+            this.Current_RPD_E.AutoSize = true;
+            this.Current_RPD_E.Location = new System.Drawing.Point(181, 101);
+            this.Current_RPD_E.Name = "Current_RPD_E";
+            this.Current_RPD_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_RPD_E.TabIndex = 38;
+            this.Current_RPD_E.Text = "?";
+            // 
+            // Current_M249_M
+            // 
+            this.Current_M249_M.AutoSize = true;
+            this.Current_M249_M.Location = new System.Drawing.Point(181, 19);
+            this.Current_M249_M.Name = "Current_M249_M";
+            this.Current_M249_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_M249_M.TabIndex = 39;
+            this.Current_M249_M.Text = "?";
+            // 
+            // Current_M249_E
+            // 
+            this.Current_M249_E.AutoSize = true;
+            this.Current_M249_E.Location = new System.Drawing.Point(181, 43);
+            this.Current_M249_E.Name = "Current_M249_E";
+            this.Current_M249_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_M249_E.TabIndex = 40;
+            this.Current_M249_E.Text = "?";
+            // 
+            // Current_RPD_M
+            // 
+            this.Current_RPD_M.AutoSize = true;
+            this.Current_RPD_M.Location = new System.Drawing.Point(181, 77);
+            this.Current_RPD_M.Name = "Current_RPD_M";
+            this.Current_RPD_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_RPD_M.TabIndex = 41;
+            this.Current_RPD_M.Text = "?";
+            // 
+            // TB_M249_M
+            // 
+            this.TB_M249_M.Location = new System.Drawing.Point(231, 16);
+            this.TB_M249_M.Name = "TB_M249_M";
+            this.TB_M249_M.Size = new System.Drawing.Size(100, 20);
+            this.TB_M249_M.TabIndex = 48;
+            // 
+            // TB_M60E4_E
+            // 
+            this.TB_M60E4_E.Location = new System.Drawing.Point(231, 155);
+            this.TB_M60E4_E.Name = "TB_M60E4_E";
+            this.TB_M60E4_E.Size = new System.Drawing.Size(100, 20);
+            this.TB_M60E4_E.TabIndex = 49;
+            // 
+            // TB_M60E4_M
+            // 
+            this.TB_M60E4_M.Location = new System.Drawing.Point(231, 131);
+            this.TB_M60E4_M.Name = "TB_M60E4_M";
+            this.TB_M60E4_M.Size = new System.Drawing.Size(100, 20);
+            this.TB_M60E4_M.TabIndex = 50;
+            // 
+            // TB_RPD_E
+            // 
+            this.TB_RPD_E.Location = new System.Drawing.Point(231, 98);
+            this.TB_RPD_E.Name = "TB_RPD_E";
+            this.TB_RPD_E.Size = new System.Drawing.Size(100, 20);
+            this.TB_RPD_E.TabIndex = 51;
+            // 
+            // TB_RPD_M
+            // 
+            this.TB_RPD_M.Location = new System.Drawing.Point(231, 74);
+            this.TB_RPD_M.Name = "TB_RPD_M";
+            this.TB_RPD_M.Size = new System.Drawing.Size(100, 20);
+            this.TB_RPD_M.TabIndex = 52;
+            // 
+            // TB_M249_E
+            // 
+            this.TB_M249_E.Location = new System.Drawing.Point(231, 40);
+            this.TB_M249_E.Name = "TB_M249_E";
+            this.TB_M249_E.Size = new System.Drawing.Size(100, 20);
+            this.TB_M249_E.TabIndex = 53;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -951,6 +1150,8 @@
             this.Tab_Assault.PerformLayout();
             this.Tab_SMG.ResumeLayout(false);
             this.Tab_SMG.PerformLayout();
+            this.Tab_LMG.ResumeLayout(false);
+            this.Tab_LMG.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1039,6 +1240,24 @@
         private System.Windows.Forms.TextBox TB_SKORP_M;
         private System.Windows.Forms.TextBox TB_MP5_E;
         private System.Windows.Forms.TextBox TB_MP5_M;
+        private System.Windows.Forms.TextBox TB_M249_E;
+        private System.Windows.Forms.TextBox TB_RPD_M;
+        private System.Windows.Forms.TextBox TB_RPD_E;
+        private System.Windows.Forms.TextBox TB_M60E4_M;
+        private System.Windows.Forms.TextBox TB_M60E4_E;
+        private System.Windows.Forms.TextBox TB_M249_M;
+        private System.Windows.Forms.Label Current_RPD_M;
+        private System.Windows.Forms.Label Current_M249_E;
+        private System.Windows.Forms.Label Current_M249_M;
+        private System.Windows.Forms.Label Current_RPD_E;
+        private System.Windows.Forms.Label Current_M60E4_E;
+        private System.Windows.Forms.Label Current_M60E4_M;
+        private System.Windows.Forms.Label Label_M60E4_E;
+        private System.Windows.Forms.Label Label_M60E4_M;
+        private System.Windows.Forms.Label Label_RPD_E;
+        private System.Windows.Forms.Label Label_RPD_M;
+        private System.Windows.Forms.Label Label_M249_E;
+        private System.Windows.Forms.Label Lable_M249_M;
     }
 }
 
