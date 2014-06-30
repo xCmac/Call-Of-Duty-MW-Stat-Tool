@@ -129,10 +129,54 @@
             this.TB_RPD_E = new System.Windows.Forms.TextBox();
             this.TB_RPD_M = new System.Windows.Forms.TextBox();
             this.TB_M249_E = new System.Windows.Forms.TextBox();
+            this.Label_W1200_M = new System.Windows.Forms.Label();
+            this.Label_W1200_E = new System.Windows.Forms.Label();
+            this.Lable_M1014_M = new System.Windows.Forms.Label();
+            this.Lable_M1014_E = new System.Windows.Forms.Label();
+            this.Current_M1014_E = new System.Windows.Forms.Label();
+            this.Current_M1014_M = new System.Windows.Forms.Label();
+            this.Current_W1200_E = new System.Windows.Forms.Label();
+            this.Current_W1200_M = new System.Windows.Forms.Label();
+            this.TB_M1014_E = new System.Windows.Forms.TextBox();
+            this.TB_M1014_M = new System.Windows.Forms.TextBox();
+            this.TB_W1200_E = new System.Windows.Forms.TextBox();
+            this.TB_W1200_M = new System.Windows.Forms.TextBox();
+            this.Label_BARRET_E = new System.Windows.Forms.Label();
+            this.Label_BARRET_M = new System.Windows.Forms.Label();
+            this.Label_R700_E = new System.Windows.Forms.Label();
+            this.Label_R700_M = new System.Windows.Forms.Label();
+            this.Label_DRAGUNOV_E = new System.Windows.Forms.Label();
+            this.Label_DRAGUNOV_M = new System.Windows.Forms.Label();
+            this.Label_M21_E = new System.Windows.Forms.Label();
+            this.Label_M21_M = new System.Windows.Forms.Label();
+            this.Label_M40A3_E = new System.Windows.Forms.Label();
+            this.Label_M40A3_M = new System.Windows.Forms.Label();
+            this.Current_BARRET_E = new System.Windows.Forms.Label();
+            this.Current_M40A3_M = new System.Windows.Forms.Label();
+            this.Current_M40A3_E = new System.Windows.Forms.Label();
+            this.Current_M21_M = new System.Windows.Forms.Label();
+            this.Current_M21_E = new System.Windows.Forms.Label();
+            this.Current_DRAGUNOV_M = new System.Windows.Forms.Label();
+            this.Current_DRAGUNOV_E = new System.Windows.Forms.Label();
+            this.Current_R700_M = new System.Windows.Forms.Label();
+            this.Current_R700_E = new System.Windows.Forms.Label();
+            this.Current_BARRET_M = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.ChallengeTabs.SuspendLayout();
             this.Tab_Assault.SuspendLayout();
             this.Tab_SMG.SuspendLayout();
             this.Tab_LMG.SuspendLayout();
+            this.Tab_Shotgun.SuspendLayout();
+            this.Tab_Sniper.SuspendLayout();
             this.SuspendLayout();
             // 
             // Label_M16_M
@@ -590,7 +634,7 @@
             this.Tab_SMG.Location = new System.Drawing.Point(23, 4);
             this.Tab_SMG.Name = "Tab_SMG";
             this.Tab_SMG.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_SMG.Size = new System.Drawing.Size(334, 466);
+            this.Tab_SMG.Size = new System.Drawing.Size(334, 511);
             this.Tab_SMG.TabIndex = 1;
             this.Tab_SMG.Text = "SMG";
             this.Tab_SMG.UseVisualStyleBackColor = true;
@@ -617,25 +661,67 @@
             this.Tab_LMG.Controls.Add(this.Lable_M249_M);
             this.Tab_LMG.Location = new System.Drawing.Point(23, 4);
             this.Tab_LMG.Name = "Tab_LMG";
-            this.Tab_LMG.Size = new System.Drawing.Size(334, 466);
+            this.Tab_LMG.Size = new System.Drawing.Size(334, 511);
             this.Tab_LMG.TabIndex = 2;
             this.Tab_LMG.Text = "LMG";
             this.Tab_LMG.UseVisualStyleBackColor = true;
             // 
             // Tab_Shotgun
             // 
+            this.Tab_Shotgun.Controls.Add(this.TB_W1200_M);
+            this.Tab_Shotgun.Controls.Add(this.TB_W1200_E);
+            this.Tab_Shotgun.Controls.Add(this.TB_M1014_M);
+            this.Tab_Shotgun.Controls.Add(this.TB_M1014_E);
+            this.Tab_Shotgun.Controls.Add(this.Current_W1200_M);
+            this.Tab_Shotgun.Controls.Add(this.Current_W1200_E);
+            this.Tab_Shotgun.Controls.Add(this.Current_M1014_M);
+            this.Tab_Shotgun.Controls.Add(this.Current_M1014_E);
+            this.Tab_Shotgun.Controls.Add(this.Lable_M1014_E);
+            this.Tab_Shotgun.Controls.Add(this.Lable_M1014_M);
+            this.Tab_Shotgun.Controls.Add(this.Label_W1200_E);
+            this.Tab_Shotgun.Controls.Add(this.Label_W1200_M);
             this.Tab_Shotgun.Location = new System.Drawing.Point(23, 4);
             this.Tab_Shotgun.Name = "Tab_Shotgun";
-            this.Tab_Shotgun.Size = new System.Drawing.Size(334, 466);
+            this.Tab_Shotgun.Size = new System.Drawing.Size(334, 511);
             this.Tab_Shotgun.TabIndex = 3;
             this.Tab_Shotgun.Text = "Shotgun";
             this.Tab_Shotgun.UseVisualStyleBackColor = true;
             // 
             // Tab_Sniper
             // 
+            this.Tab_Sniper.Controls.Add(this.textBox10);
+            this.Tab_Sniper.Controls.Add(this.textBox9);
+            this.Tab_Sniper.Controls.Add(this.textBox8);
+            this.Tab_Sniper.Controls.Add(this.textBox7);
+            this.Tab_Sniper.Controls.Add(this.textBox6);
+            this.Tab_Sniper.Controls.Add(this.textBox5);
+            this.Tab_Sniper.Controls.Add(this.textBox4);
+            this.Tab_Sniper.Controls.Add(this.textBox3);
+            this.Tab_Sniper.Controls.Add(this.textBox2);
+            this.Tab_Sniper.Controls.Add(this.textBox1);
+            this.Tab_Sniper.Controls.Add(this.Current_BARRET_M);
+            this.Tab_Sniper.Controls.Add(this.Current_R700_E);
+            this.Tab_Sniper.Controls.Add(this.Current_R700_M);
+            this.Tab_Sniper.Controls.Add(this.Current_DRAGUNOV_E);
+            this.Tab_Sniper.Controls.Add(this.Current_DRAGUNOV_M);
+            this.Tab_Sniper.Controls.Add(this.Current_M21_E);
+            this.Tab_Sniper.Controls.Add(this.Current_M21_M);
+            this.Tab_Sniper.Controls.Add(this.Current_M40A3_E);
+            this.Tab_Sniper.Controls.Add(this.Current_M40A3_M);
+            this.Tab_Sniper.Controls.Add(this.Current_BARRET_E);
+            this.Tab_Sniper.Controls.Add(this.Label_M40A3_M);
+            this.Tab_Sniper.Controls.Add(this.Label_M40A3_E);
+            this.Tab_Sniper.Controls.Add(this.Label_M21_M);
+            this.Tab_Sniper.Controls.Add(this.Label_M21_E);
+            this.Tab_Sniper.Controls.Add(this.Label_DRAGUNOV_M);
+            this.Tab_Sniper.Controls.Add(this.Label_DRAGUNOV_E);
+            this.Tab_Sniper.Controls.Add(this.Label_R700_M);
+            this.Tab_Sniper.Controls.Add(this.Label_R700_E);
+            this.Tab_Sniper.Controls.Add(this.Label_BARRET_M);
+            this.Tab_Sniper.Controls.Add(this.Label_BARRET_E);
             this.Tab_Sniper.Location = new System.Drawing.Point(23, 4);
             this.Tab_Sniper.Name = "Tab_Sniper";
-            this.Tab_Sniper.Size = new System.Drawing.Size(334, 466);
+            this.Tab_Sniper.Size = new System.Drawing.Size(334, 511);
             this.Tab_Sniper.TabIndex = 4;
             this.Tab_Sniper.Text = "Sniper";
             this.Tab_Sniper.UseVisualStyleBackColor = true;
@@ -645,7 +731,7 @@
             this.Tab_BootCamp.Location = new System.Drawing.Point(23, 4);
             this.Tab_BootCamp.Name = "Tab_BootCamp";
             this.Tab_BootCamp.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_BootCamp.Size = new System.Drawing.Size(334, 466);
+            this.Tab_BootCamp.Size = new System.Drawing.Size(334, 511);
             this.Tab_BootCamp.TabIndex = 5;
             this.Tab_BootCamp.Text = "Boot Camp";
             this.Tab_BootCamp.UseVisualStyleBackColor = true;
@@ -654,7 +740,7 @@
             // 
             this.Tab_Operations.Location = new System.Drawing.Point(23, 4);
             this.Tab_Operations.Name = "Tab_Operations";
-            this.Tab_Operations.Size = new System.Drawing.Size(334, 466);
+            this.Tab_Operations.Size = new System.Drawing.Size(334, 511);
             this.Tab_Operations.TabIndex = 6;
             this.Tab_Operations.Text = "Operations";
             this.Tab_Operations.UseVisualStyleBackColor = true;
@@ -663,25 +749,25 @@
             // 
             this.Tab_Killer.Location = new System.Drawing.Point(23, 4);
             this.Tab_Killer.Name = "Tab_Killer";
-            this.Tab_Killer.Size = new System.Drawing.Size(334, 466);
+            this.Tab_Killer.Size = new System.Drawing.Size(334, 511);
             this.Tab_Killer.TabIndex = 7;
             this.Tab_Killer.Text = "Killer";
             this.Tab_Killer.UseVisualStyleBackColor = true;
             // 
             // Tab_Humiliation
             // 
-            this.Tab_Humiliation.Location = new System.Drawing.Point(42, 4);
+            this.Tab_Humiliation.Location = new System.Drawing.Point(23, 4);
             this.Tab_Humiliation.Name = "Tab_Humiliation";
-            this.Tab_Humiliation.Size = new System.Drawing.Size(315, 466);
+            this.Tab_Humiliation.Size = new System.Drawing.Size(334, 511);
             this.Tab_Humiliation.TabIndex = 8;
             this.Tab_Humiliation.Text = "Humiliation";
             this.Tab_Humiliation.UseVisualStyleBackColor = true;
             // 
             // Tab_Elite
             // 
-            this.Tab_Elite.Location = new System.Drawing.Point(42, 4);
+            this.Tab_Elite.Location = new System.Drawing.Point(23, 4);
             this.Tab_Elite.Name = "Tab_Elite";
-            this.Tab_Elite.Size = new System.Drawing.Size(315, 466);
+            this.Tab_Elite.Size = new System.Drawing.Size(334, 511);
             this.Tab_Elite.TabIndex = 9;
             this.Tab_Elite.Text = "Elite";
             this.Tab_Elite.UseVisualStyleBackColor = true;
@@ -1134,6 +1220,384 @@
             this.TB_M249_E.Size = new System.Drawing.Size(100, 20);
             this.TB_M249_E.TabIndex = 53;
             // 
+            // Label_W1200_M
+            // 
+            this.Label_W1200_M.AutoSize = true;
+            this.Label_W1200_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_W1200_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_W1200_M.Location = new System.Drawing.Point(3, 9);
+            this.Label_W1200_M.Name = "Label_W1200_M";
+            this.Label_W1200_M.Size = new System.Drawing.Size(161, 24);
+            this.Label_W1200_M.TabIndex = 30;
+            this.Label_W1200_M.Text = "W1200 Marksmen";
+            // 
+            // Label_W1200_E
+            // 
+            this.Label_W1200_E.AutoSize = true;
+            this.Label_W1200_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_W1200_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_W1200_E.Location = new System.Drawing.Point(3, 33);
+            this.Label_W1200_E.Name = "Label_W1200_E";
+            this.Label_W1200_E.Size = new System.Drawing.Size(128, 24);
+            this.Label_W1200_E.TabIndex = 31;
+            this.Label_W1200_E.Text = "W1200 Expert";
+            // 
+            // Lable_M1014_M
+            // 
+            this.Lable_M1014_M.AutoSize = true;
+            this.Lable_M1014_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Lable_M1014_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lable_M1014_M.Location = new System.Drawing.Point(3, 66);
+            this.Lable_M1014_M.Name = "Lable_M1014_M";
+            this.Lable_M1014_M.Size = new System.Drawing.Size(159, 24);
+            this.Lable_M1014_M.TabIndex = 32;
+            this.Lable_M1014_M.Text = "M1014 Marksmen";
+            // 
+            // Lable_M1014_E
+            // 
+            this.Lable_M1014_E.AutoSize = true;
+            this.Lable_M1014_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Lable_M1014_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lable_M1014_E.Location = new System.Drawing.Point(3, 90);
+            this.Lable_M1014_E.Name = "Lable_M1014_E";
+            this.Lable_M1014_E.Size = new System.Drawing.Size(126, 24);
+            this.Lable_M1014_E.TabIndex = 33;
+            this.Lable_M1014_E.Text = "M1014 Expert";
+            // 
+            // Current_M1014_E
+            // 
+            this.Current_M1014_E.AutoSize = true;
+            this.Current_M1014_E.Location = new System.Drawing.Point(177, 98);
+            this.Current_M1014_E.Name = "Current_M1014_E";
+            this.Current_M1014_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_M1014_E.TabIndex = 36;
+            this.Current_M1014_E.Text = "?";
+            // 
+            // Current_M1014_M
+            // 
+            this.Current_M1014_M.AutoSize = true;
+            this.Current_M1014_M.Location = new System.Drawing.Point(177, 74);
+            this.Current_M1014_M.Name = "Current_M1014_M";
+            this.Current_M1014_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_M1014_M.TabIndex = 37;
+            this.Current_M1014_M.Text = "?";
+            // 
+            // Current_W1200_E
+            // 
+            this.Current_W1200_E.AutoSize = true;
+            this.Current_W1200_E.Location = new System.Drawing.Point(177, 41);
+            this.Current_W1200_E.Name = "Current_W1200_E";
+            this.Current_W1200_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_W1200_E.TabIndex = 38;
+            this.Current_W1200_E.Text = "?";
+            // 
+            // Current_W1200_M
+            // 
+            this.Current_W1200_M.AutoSize = true;
+            this.Current_W1200_M.Location = new System.Drawing.Point(177, 17);
+            this.Current_W1200_M.Name = "Current_W1200_M";
+            this.Current_W1200_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_W1200_M.TabIndex = 39;
+            this.Current_W1200_M.Text = "?";
+            // 
+            // TB_M1014_E
+            // 
+            this.TB_M1014_E.Location = new System.Drawing.Point(213, 95);
+            this.TB_M1014_E.Name = "TB_M1014_E";
+            this.TB_M1014_E.Size = new System.Drawing.Size(100, 20);
+            this.TB_M1014_E.TabIndex = 50;
+            // 
+            // TB_M1014_M
+            // 
+            this.TB_M1014_M.Location = new System.Drawing.Point(213, 71);
+            this.TB_M1014_M.Name = "TB_M1014_M";
+            this.TB_M1014_M.Size = new System.Drawing.Size(100, 20);
+            this.TB_M1014_M.TabIndex = 51;
+            // 
+            // TB_W1200_E
+            // 
+            this.TB_W1200_E.Location = new System.Drawing.Point(213, 38);
+            this.TB_W1200_E.Name = "TB_W1200_E";
+            this.TB_W1200_E.Size = new System.Drawing.Size(100, 20);
+            this.TB_W1200_E.TabIndex = 52;
+            // 
+            // TB_W1200_M
+            // 
+            this.TB_W1200_M.Location = new System.Drawing.Point(213, 14);
+            this.TB_W1200_M.Name = "TB_W1200_M";
+            this.TB_W1200_M.Size = new System.Drawing.Size(100, 20);
+            this.TB_W1200_M.TabIndex = 53;
+            // 
+            // Label_BARRET_E
+            // 
+            this.Label_BARRET_E.AutoSize = true;
+            this.Label_BARRET_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_BARRET_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_BARRET_E.Location = new System.Drawing.Point(3, 261);
+            this.Label_BARRET_E.Name = "Label_BARRET_E";
+            this.Label_BARRET_E.Size = new System.Drawing.Size(185, 24);
+            this.Label_BARRET_E.TabIndex = 34;
+            this.Label_BARRET_E.Text = "Barrett .50 Cal Expert";
+            // 
+            // Label_BARRET_M
+            // 
+            this.Label_BARRET_M.AutoSize = true;
+            this.Label_BARRET_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_BARRET_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_BARRET_M.Location = new System.Drawing.Point(3, 237);
+            this.Label_BARRET_M.Name = "Label_BARRET_M";
+            this.Label_BARRET_M.Size = new System.Drawing.Size(217, 24);
+            this.Label_BARRET_M.TabIndex = 35;
+            this.Label_BARRET_M.Text = "Barrett .50 Cal Marksman";
+            // 
+            // Label_R700_E
+            // 
+            this.Label_R700_E.AutoSize = true;
+            this.Label_R700_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_R700_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_R700_E.Location = new System.Drawing.Point(3, 204);
+            this.Label_R700_E.Name = "Label_R700_E";
+            this.Label_R700_E.Size = new System.Drawing.Size(145, 24);
+            this.Label_R700_E.TabIndex = 36;
+            this.Label_R700_E.Text = "R700 Marksman";
+            // 
+            // Label_R700_M
+            // 
+            this.Label_R700_M.AutoSize = true;
+            this.Label_R700_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_R700_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_R700_M.Location = new System.Drawing.Point(3, 180);
+            this.Label_R700_M.Name = "Label_R700_M";
+            this.Label_R700_M.Size = new System.Drawing.Size(145, 24);
+            this.Label_R700_M.TabIndex = 37;
+            this.Label_R700_M.Text = "R700 Marksman";
+            // 
+            // Label_DRAGUNOV_E
+            // 
+            this.Label_DRAGUNOV_E.AutoSize = true;
+            this.Label_DRAGUNOV_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_DRAGUNOV_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_DRAGUNOV_E.Location = new System.Drawing.Point(3, 147);
+            this.Label_DRAGUNOV_E.Name = "Label_DRAGUNOV_E";
+            this.Label_DRAGUNOV_E.Size = new System.Drawing.Size(152, 24);
+            this.Label_DRAGUNOV_E.TabIndex = 38;
+            this.Label_DRAGUNOV_E.Text = "Dragunov Expert";
+            // 
+            // Label_DRAGUNOV_M
+            // 
+            this.Label_DRAGUNOV_M.AutoSize = true;
+            this.Label_DRAGUNOV_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_DRAGUNOV_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_DRAGUNOV_M.Location = new System.Drawing.Point(3, 123);
+            this.Label_DRAGUNOV_M.Name = "Label_DRAGUNOV_M";
+            this.Label_DRAGUNOV_M.Size = new System.Drawing.Size(184, 24);
+            this.Label_DRAGUNOV_M.TabIndex = 39;
+            this.Label_DRAGUNOV_M.Text = "Dragunov Marksman";
+            // 
+            // Label_M21_E
+            // 
+            this.Label_M21_E.AutoSize = true;
+            this.Label_M21_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_M21_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_M21_E.Location = new System.Drawing.Point(3, 90);
+            this.Label_M21_E.Name = "Label_M21_E";
+            this.Label_M21_E.Size = new System.Drawing.Size(106, 24);
+            this.Label_M21_E.TabIndex = 40;
+            this.Label_M21_E.Text = "M21 Expert";
+            // 
+            // Label_M21_M
+            // 
+            this.Label_M21_M.AutoSize = true;
+            this.Label_M21_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_M21_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_M21_M.Location = new System.Drawing.Point(3, 66);
+            this.Label_M21_M.Name = "Label_M21_M";
+            this.Label_M21_M.Size = new System.Drawing.Size(138, 24);
+            this.Label_M21_M.TabIndex = 41;
+            this.Label_M21_M.Text = "M21 Marksman";
+            // 
+            // Label_M40A3_E
+            // 
+            this.Label_M40A3_E.AutoSize = true;
+            this.Label_M40A3_E.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_M40A3_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_M40A3_E.Location = new System.Drawing.Point(3, 33);
+            this.Label_M40A3_E.Name = "Label_M40A3_E";
+            this.Label_M40A3_E.Size = new System.Drawing.Size(129, 24);
+            this.Label_M40A3_E.TabIndex = 42;
+            this.Label_M40A3_E.Text = "M40A3 Expert";
+            // 
+            // Label_M40A3_M
+            // 
+            this.Label_M40A3_M.AutoSize = true;
+            this.Label_M40A3_M.BackColor = System.Drawing.SystemColors.Control;
+            this.Label_M40A3_M.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_M40A3_M.Location = new System.Drawing.Point(3, 9);
+            this.Label_M40A3_M.Name = "Label_M40A3_M";
+            this.Label_M40A3_M.Size = new System.Drawing.Size(161, 24);
+            this.Label_M40A3_M.TabIndex = 43;
+            this.Label_M40A3_M.Text = "M40A3 Marksman";
+            // 
+            // Current_BARRET_E
+            // 
+            this.Current_BARRET_E.AutoSize = true;
+            this.Current_BARRET_E.Location = new System.Drawing.Point(226, 269);
+            this.Current_BARRET_E.Name = "Current_BARRET_E";
+            this.Current_BARRET_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_BARRET_E.TabIndex = 44;
+            this.Current_BARRET_E.Text = "?";
+            // 
+            // Current_M40A3_M
+            // 
+            this.Current_M40A3_M.AutoSize = true;
+            this.Current_M40A3_M.Location = new System.Drawing.Point(226, 17);
+            this.Current_M40A3_M.Name = "Current_M40A3_M";
+            this.Current_M40A3_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_M40A3_M.TabIndex = 45;
+            this.Current_M40A3_M.Text = "?";
+            // 
+            // Current_M40A3_E
+            // 
+            this.Current_M40A3_E.AutoSize = true;
+            this.Current_M40A3_E.Location = new System.Drawing.Point(226, 41);
+            this.Current_M40A3_E.Name = "Current_M40A3_E";
+            this.Current_M40A3_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_M40A3_E.TabIndex = 46;
+            this.Current_M40A3_E.Text = "?";
+            // 
+            // Current_M21_M
+            // 
+            this.Current_M21_M.AutoSize = true;
+            this.Current_M21_M.Location = new System.Drawing.Point(226, 74);
+            this.Current_M21_M.Name = "Current_M21_M";
+            this.Current_M21_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_M21_M.TabIndex = 47;
+            this.Current_M21_M.Text = "?";
+            // 
+            // Current_M21_E
+            // 
+            this.Current_M21_E.AutoSize = true;
+            this.Current_M21_E.Location = new System.Drawing.Point(226, 98);
+            this.Current_M21_E.Name = "Current_M21_E";
+            this.Current_M21_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_M21_E.TabIndex = 48;
+            this.Current_M21_E.Text = "?";
+            // 
+            // Current_DRAGUNOV_M
+            // 
+            this.Current_DRAGUNOV_M.AutoSize = true;
+            this.Current_DRAGUNOV_M.Location = new System.Drawing.Point(226, 131);
+            this.Current_DRAGUNOV_M.Name = "Current_DRAGUNOV_M";
+            this.Current_DRAGUNOV_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_DRAGUNOV_M.TabIndex = 49;
+            this.Current_DRAGUNOV_M.Text = "?";
+            // 
+            // Current_DRAGUNOV_E
+            // 
+            this.Current_DRAGUNOV_E.AutoSize = true;
+            this.Current_DRAGUNOV_E.Location = new System.Drawing.Point(226, 155);
+            this.Current_DRAGUNOV_E.Name = "Current_DRAGUNOV_E";
+            this.Current_DRAGUNOV_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_DRAGUNOV_E.TabIndex = 50;
+            this.Current_DRAGUNOV_E.Text = "?";
+            // 
+            // Current_R700_M
+            // 
+            this.Current_R700_M.AutoSize = true;
+            this.Current_R700_M.Location = new System.Drawing.Point(226, 188);
+            this.Current_R700_M.Name = "Current_R700_M";
+            this.Current_R700_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_R700_M.TabIndex = 51;
+            this.Current_R700_M.Text = "?";
+            // 
+            // Current_R700_E
+            // 
+            this.Current_R700_E.AutoSize = true;
+            this.Current_R700_E.Location = new System.Drawing.Point(226, 212);
+            this.Current_R700_E.Name = "Current_R700_E";
+            this.Current_R700_E.Size = new System.Drawing.Size(13, 13);
+            this.Current_R700_E.TabIndex = 52;
+            this.Current_R700_E.Text = "?";
+            // 
+            // Current_BARRET_M
+            // 
+            this.Current_BARRET_M.AutoSize = true;
+            this.Current_BARRET_M.Location = new System.Drawing.Point(226, 245);
+            this.Current_BARRET_M.Name = "Current_BARRET_M";
+            this.Current_BARRET_M.Size = new System.Drawing.Size(13, 13);
+            this.Current_BARRET_M.TabIndex = 53;
+            this.Current_BARRET_M.Text = "?";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(257, 14);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(74, 20);
+            this.textBox1.TabIndex = 54;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(257, 266);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(74, 20);
+            this.textBox2.TabIndex = 55;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(257, 242);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(74, 20);
+            this.textBox3.TabIndex = 56;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(257, 209);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(74, 20);
+            this.textBox4.TabIndex = 57;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(257, 185);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(74, 20);
+            this.textBox5.TabIndex = 58;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(257, 152);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(74, 20);
+            this.textBox6.TabIndex = 59;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(257, 128);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(74, 20);
+            this.textBox7.TabIndex = 60;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(257, 95);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(74, 20);
+            this.textBox8.TabIndex = 61;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(257, 71);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(74, 20);
+            this.textBox9.TabIndex = 62;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(257, 38);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(74, 20);
+            this.textBox10.TabIndex = 63;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1144,7 +1608,7 @@
             this.Controls.Add(this.ReadMemoryButton);
             this.Controls.Add(this.ChallengeTabs);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "iw3mp Stat Tool [1.7]";
             this.ChallengeTabs.ResumeLayout(false);
             this.Tab_Assault.ResumeLayout(false);
             this.Tab_Assault.PerformLayout();
@@ -1152,6 +1616,10 @@
             this.Tab_SMG.PerformLayout();
             this.Tab_LMG.ResumeLayout(false);
             this.Tab_LMG.PerformLayout();
+            this.Tab_Shotgun.ResumeLayout(false);
+            this.Tab_Shotgun.PerformLayout();
+            this.Tab_Sniper.ResumeLayout(false);
+            this.Tab_Sniper.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1258,6 +1726,48 @@
         private System.Windows.Forms.Label Label_RPD_M;
         private System.Windows.Forms.Label Label_M249_E;
         private System.Windows.Forms.Label Lable_M249_M;
+        private System.Windows.Forms.Label Label_W1200_M;
+        private System.Windows.Forms.Label Label_W1200_E;
+        private System.Windows.Forms.TextBox TB_W1200_M;
+        private System.Windows.Forms.TextBox TB_W1200_E;
+        private System.Windows.Forms.TextBox TB_M1014_M;
+        private System.Windows.Forms.TextBox TB_M1014_E;
+        private System.Windows.Forms.Label Current_W1200_M;
+        private System.Windows.Forms.Label Current_W1200_E;
+        private System.Windows.Forms.Label Current_M1014_M;
+        private System.Windows.Forms.Label Current_M1014_E;
+        private System.Windows.Forms.Label Lable_M1014_E;
+        private System.Windows.Forms.Label Lable_M1014_M;
+        private System.Windows.Forms.Label Current_BARRET_M;
+        private System.Windows.Forms.Label Current_R700_E;
+        private System.Windows.Forms.Label Current_R700_M;
+        private System.Windows.Forms.Label Current_DRAGUNOV_E;
+        private System.Windows.Forms.Label Current_DRAGUNOV_M;
+        private System.Windows.Forms.Label Current_M21_E;
+        private System.Windows.Forms.Label Current_M21_M;
+        private System.Windows.Forms.Label Current_M40A3_E;
+        private System.Windows.Forms.Label Current_M40A3_M;
+        private System.Windows.Forms.Label Current_BARRET_E;
+        private System.Windows.Forms.Label Label_M40A3_M;
+        private System.Windows.Forms.Label Label_M40A3_E;
+        private System.Windows.Forms.Label Label_M21_M;
+        private System.Windows.Forms.Label Label_M21_E;
+        private System.Windows.Forms.Label Label_DRAGUNOV_M;
+        private System.Windows.Forms.Label Label_DRAGUNOV_E;
+        private System.Windows.Forms.Label Label_R700_M;
+        private System.Windows.Forms.Label Label_R700_E;
+        private System.Windows.Forms.Label Label_BARRET_M;
+        private System.Windows.Forms.Label Label_BARRET_E;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

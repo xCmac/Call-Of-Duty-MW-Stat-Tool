@@ -91,7 +91,7 @@ namespace Cod4StatTool
             int m21_expert = 0xC819D7C;
 
             int dragunov_marksman = 0xC819D88;
-            //int dragunov_expert = 0xC819D8C;
+            int dragunov_expert = 0xC819D8C;
 
             //int r700_marksman =;
             //int r700_expert =;
@@ -144,6 +144,22 @@ namespace Cod4StatTool
             Current_RPD_E.Text = MemoryReader.ReadUInt(BaseAddress + rpd_expert).ToString();
             Current_M60E4_M.Text = MemoryReader.ReadUInt(BaseAddress + m60e4_marksman).ToString();
             Current_M60E4_E.Text = MemoryReader.ReadUInt(BaseAddress + m60e4_expert).ToString();
+
+            Current_W1200_M.Text = MemoryReader.ReadUInt(BaseAddress + w1200_marksman).ToString();
+            Current_W1200_E.Text = MemoryReader.ReadUInt(BaseAddress + w1200_expert).ToString();
+            //Current_M1014_M.Text = MemoryReader.ReadUInt(BaseAddress + m1014_marksman).ToString();
+            //Current_M1014_E.Text = MemoryReader.ReadUInt(BaseAddress + m1014_expert).ToString();
+
+            Current_M40A3_M.Text = MemoryReader.ReadUInt(BaseAddress + m40a3_marksman).ToString();
+            Current_M40A3_E.Text = MemoryReader.ReadUInt(BaseAddress + m40a3_expert).ToString();
+            Current_M21_M.Text = MemoryReader.ReadUInt(BaseAddress + m21_marksman).ToString();
+            Current_M21_E.Text = MemoryReader.ReadUInt(BaseAddress + m21_expert).ToString();
+            Current_DRAGUNOV_M.Text = MemoryReader.ReadUInt(BaseAddress + dragunov_marksman).ToString();
+            Current_DRAGUNOV_E.Text = MemoryReader.ReadUInt(BaseAddress + dragunov_expert).ToString();
+            //Current_R700_M.Text = MemoryReader.ReadUInt(BaseAddress + r700_marksman).ToString();
+            //Current_R700_E.Text = MemoryReader.ReadUInt(BaseAddress + r700_expert).ToString();
+            //Current_BARRET_M.Text = MemoryReader.ReadUInt(BaseAddress + barret_marksman).ToString();
+            //Current_BARRET_E.Text = MemoryReader.ReadUInt(BaseAddress + barret_expert).ToString();
         }
 
         private void ReadMemory_Click(object sender, EventArgs e)
