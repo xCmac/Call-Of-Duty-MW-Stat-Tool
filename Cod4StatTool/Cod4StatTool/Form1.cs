@@ -48,8 +48,8 @@ namespace Cod4StatTool
             int mp5_marksman = 0xC819C88;
             int mp5_expert = 0xC819C8C;
 
-            int skoprion_marksman = 0xC819C90;
-            int skoprion_expert = 0xC819C94;
+            int skorpion_marksman = 0xC819C90;
+            int skorpion_expert = 0xC819C94;
 
             int miniuzi_marksman = 0xC819C98;
             int miniuzi_expert = 0xC819C9C;
@@ -131,8 +131,8 @@ namespace Cod4StatTool
 
             Current_MP5_M.Text = MemoryReader.ReadUInt(BaseAddress + mp5_marksman).ToString();
             Current_MP5_E.Text = MemoryReader.ReadUInt(BaseAddress + mp5_expert).ToString();
-            Current_SKORP_M.Text = MemoryReader.ReadUInt(BaseAddress + skoprion_marksman).ToString();
-            Current_SKORP_E.Text = MemoryReader.ReadUInt(BaseAddress + skoprion_expert).ToString();
+            Current_SKORP_M.Text = MemoryReader.ReadUInt(BaseAddress + skorpion_marksman).ToString();
+            Current_SKORP_E.Text = MemoryReader.ReadUInt(BaseAddress + skorpion_expert).ToString();
             Current_UZI_M.Text = MemoryReader.ReadUInt(BaseAddress + miniuzi_marksman).ToString();
             Current_UZI_E.Text = MemoryReader.ReadUInt(BaseAddress + miniuzi_expert).ToString();
             Current_AK47U_M.Text = MemoryReader.ReadUInt(BaseAddress + ak74u_marksman).ToString();
@@ -184,16 +184,16 @@ namespace Cod4StatTool
             ReadMemoryButton.Enabled = false;
         }
 
-        private void TB_M16_M_KeyDown(object sender, KeyEventArgs e)
+        private void ValidateAndWriteToMemory(int addressToWriteTo, String textBoxText, KeyEventArgs e)
         {
             uint inputToWrite;
             bool isValidInput = true;
             if (e.KeyCode == Keys.Enter)
             {
-                isValidInput = uint.TryParse(TB_M16_M.Text, out inputToWrite);
-                if(isValidInput)
+                isValidInput = uint.TryParse(textBoxText, out inputToWrite);
+                if (isValidInput)
                 {
-                    MemoryReader.WriteUInt(BaseAddress + m16_marksman, inputToWrite);
+                    MemoryReader.WriteUInt(addressToWriteTo, inputToWrite);
                 }
             }
             if (!isValidInput)
@@ -201,463 +201,221 @@ namespace Cod4StatTool
                 MessageBox.Show("Invalid Input");
                 return;
             }
+        }
+
+        private void TB_M16_M_KeyDown(object sender, KeyEventArgs e)
+        {
+            ValidateAndWriteToMemory(BaseAddress + m16_marksman, TB_M16_M.Text, e);
         }
 
         private void TB_M16_E_KeyDown(object sender, KeyEventArgs e)
         {
-            uint inputToWrite;
-            bool isValidInput = true;
-            if (e.KeyCode == Keys.Enter)
-            {
-                isValidInput = uint.TryParse(TB_M16_E.Text, out inputToWrite);
-                if (isValidInput)
-                {
-                    MemoryReader.WriteUInt(BaseAddress + m16_expert, inputToWrite);
-                }
-            }
-            if (!isValidInput)
-            {
-                MessageBox.Show("Invalid Input");
-                return;
-            }
+            ValidateAndWriteToMemory(BaseAddress + m16_expert, TB_M16_E.Text, e);
         }
 
         private void TB_AK47_M_KeyDown(object sender, KeyEventArgs e)
         {
-            uint inputToWrite;
-            bool isValidInput = true;
-            if (e.KeyCode == Keys.Enter)
-            {
-                isValidInput = uint.TryParse(TB_AK47_M.Text, out inputToWrite);
-                if (isValidInput)
-                {
-                    MemoryReader.WriteUInt(BaseAddress + ak47_marksman, inputToWrite);
-                }
-            }
-            if (!isValidInput)
-            {
-                MessageBox.Show("Invalid Input");
-                return;
-            }
+            ValidateAndWriteToMemory(BaseAddress + ak47_marksman, TB_AK47_M.Text, e);
         }
 
         private void TB_AK47_E_KeyDown(object sender, KeyEventArgs e)
         {
-            uint inputToWrite;
-            bool isValidInput = true;
-            if (e.KeyCode == Keys.Enter)
-            {
-                isValidInput = uint.TryParse(TB_AK47_E.Text, out inputToWrite);
-                if (isValidInput)
-                {
-                    MemoryReader.WriteUInt(BaseAddress + ak47_expert, inputToWrite);
-                }
-            }
-            if (!isValidInput)
-            {
-                MessageBox.Show("Invalid Input");
-                return;
-            }
+            ValidateAndWriteToMemory(BaseAddress + ak47_expert, TB_AK47_E.Text, e);
         }
 
         private void TB_G3_M_KeyDown(object sender, KeyEventArgs e)
         {
-            uint inputToWrite;
-            bool isValidInput = true;
-            if (e.KeyCode == Keys.Enter)
-            {
-                isValidInput = uint.TryParse(TB_G3_M.Text, out inputToWrite);
-                if (isValidInput)
-                {
-                    MemoryReader.WriteUInt(BaseAddress + g3_marksman, inputToWrite);
-                }
-            }
-            if (!isValidInput)
-            {
-                MessageBox.Show("Invalid Input");
-                return;
-            }
+            ValidateAndWriteToMemory(BaseAddress + g3_marksman, TB_G3_M.Text, e);
         }
 
         private void TB_G3_E_KeyDown(object sender, KeyEventArgs e)
         {
-            uint inputToWrite;
-            bool isValidInput = true;
-            if (e.KeyCode == Keys.Enter)
-            {
-                isValidInput = uint.TryParse(TB_G3_E.Text, out inputToWrite);
-                if (isValidInput)
-                {
-                    MemoryReader.WriteUInt(BaseAddress + g3_expert, inputToWrite);
-                }
-            }
-            if (!isValidInput)
-            {
-                MessageBox.Show("Invalid Input");
-                return;
-            }
+            ValidateAndWriteToMemory(BaseAddress + g3_expert, TB_G3_E.Text, e);
         }
 
         private void TB_M4_M_KeyDown(object sender, KeyEventArgs e)
         {
-            uint inputToWrite;
-            bool isValidInput = true;
-            if (e.KeyCode == Keys.Enter)
-            {
-                isValidInput = uint.TryParse(TB_M4_M.Text, out inputToWrite);
-                if (isValidInput)
-                {
-                    MemoryReader.WriteUInt(BaseAddress + m4_marksman, inputToWrite);
-                }
-            }
-            if (!isValidInput)
-            {
-                MessageBox.Show("Invalid Input");
-                return;
-            }
+            ValidateAndWriteToMemory(BaseAddress + m4_marksman, TB_M4_M.Text, e);
         }
 
         private void TB_M4_E_KeyDown(object sender, KeyEventArgs e)
         {
-            uint inputToWrite;
-            bool isValidInput = true;
-            if (e.KeyCode == Keys.Enter)
-            {
-                isValidInput = uint.TryParse(TB_M4_E.Text, out inputToWrite);
-                if (isValidInput)
-                {
-                    MemoryReader.WriteUInt(BaseAddress + m4_expert, inputToWrite);
-                }
-            }
-            if (!isValidInput)
-            {
-                MessageBox.Show("Invalid Input");
-                return;
-            }
+            ValidateAndWriteToMemory(BaseAddress + m4_expert, TB_M4_E.Text, e);
         }
 
         private void TB_M14_M_KeyDown(object sender, KeyEventArgs e)
         {
-            uint inputToWrite;
-            bool isValidInput = true;
-            if (e.KeyCode == Keys.Enter)
-            {
-                isValidInput = uint.TryParse(TB_M14_M.Text, out inputToWrite);
-                if (isValidInput)
-                {
-                    MemoryReader.WriteUInt(BaseAddress + m14_marksman, inputToWrite);
-                }
-            }
-            if (!isValidInput)
-            {
-                MessageBox.Show("Invalid Input");
-                return;
-            }
+            ValidateAndWriteToMemory(BaseAddress + m14_marksman, TB_M14_M.Text, e);
         }
 
         private void TB_M14_E_KeyDown(object sender, KeyEventArgs e)
         {
-            uint inputToWrite;
-            bool isValidInput = true;
-            if (e.KeyCode == Keys.Enter)
-            {
-                isValidInput = uint.TryParse(TB_M14_E.Text, out inputToWrite);
-                if (isValidInput)
-                {
-                    MemoryReader.WriteUInt(BaseAddress + m14_expert, inputToWrite);
-                }
-            }
-            if (!isValidInput)
-            {
-                MessageBox.Show("Invalid Input");
-                return;
-            }
+            ValidateAndWriteToMemory(BaseAddress + m14_expert, TB_M14_E.Text, e);
         }
 
         private void TB_G36C_M_KeyDown(object sender, KeyEventArgs e)
         {
-            uint inputToWrite;
-            bool isValidInput = true;
-            if (e.KeyCode == Keys.Enter)
-            {
-                isValidInput = uint.TryParse(TB_G36C_M.Text, out inputToWrite);
-                if (isValidInput)
-                {
-                    MemoryReader.WriteUInt(BaseAddress + g36c_marksman, inputToWrite);
-                }
-            }
-            if (!isValidInput)
-            {
-                MessageBox.Show("Invalid Input");
-                return;
-            }
+            ValidateAndWriteToMemory(BaseAddress + g36c_marksman, TB_G36C_M.Text, e);
         }
 
         private void TB_G36C_E_KeyDown(object sender, KeyEventArgs e)
         {
-            uint inputToWrite;
-            bool isValidInput = true;
-            if (e.KeyCode == Keys.Enter)
-            {
-                isValidInput = uint.TryParse(TB_G36C_E.Text, out inputToWrite);
-                if (isValidInput)
-                {
-                    MemoryReader.WriteUInt(BaseAddress + g36c_expert, inputToWrite);
-                }
-            }
-            if (!isValidInput)
-            {
-                MessageBox.Show("Invalid Input");
-                return;
-            }
+            ValidateAndWriteToMemory(BaseAddress + g36c_expert, TB_G36C_E.Text, e);
         }
 
         private void TB_MP44_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + mp44_expert, TB_MP44_E.Text, e);
         }
 
         private void TB_MP5_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + mp5_marksman, TB_MP5_M.Text, e);
         }
 
         private void TB_MP5_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + mp5_expert, TB_MP5_E.Text, e);
         }
 
         private void TB_SKORP_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + skorpion_marksman, TB_SKORP_M.Text, e);
         }
 
         private void TB_SKORP_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + skorpion_expert, TB_SKORP_E.Text, e);
         }
 
         private void TB_UZI_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + miniuzi_marksman, TB_UZI_M.Text, e);
         }
 
         private void TB_UZI_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + miniuzi_expert, TB_UZI_E.Text, e);
         }
 
         private void TB_AK47U_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + ak74u_marksman, TB_AK47U_M.Text, e);
         }
 
         private void TB_AK47U_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + aK74u_expert, TB_AK47U_E.Text, e);
         }
 
         private void TB_P90_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + p90_marksman, TB_P90_M.Text, e);
         }
 
         private void TB_P90_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + p90_expert, TB_P90_E.Text, e);
         }
 
         private void TB_M249_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + m249_marksman, TB_M249_M.Text, e);
         }
 
         private void TB_M249_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + m249_expert, TB_M249_E.Text, e);
         }
 
         private void TB_RPD_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + rpd_marksman, TB_RPD_M.Text, e);
         }
 
         private void TB_RPD_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + rpd_expert, TB_RPD_E.Text, e);
         }
 
         private void TB_M60E4_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + m60e4_marksman, TB_M60E4_M.Text, e);
         }
 
         private void TB_M60E4_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + m60e4_expert, TB_M60E4_E.Text, e);
         }
 
         private void TB_W1200_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + w1200_marksman, TB_W1200_M.Text, e);
         }
 
         private void TB_W1200_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + w1200_expert, TB_W1200_E.Text, e);
         }
 
         private void TB_M1014_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + m1014_marksman, TB_M1014_M.Text, e);
         }
 
         private void TB_M1014_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + m1014_expert, TB_M1014_E.Text, e);
         }
 
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        private void TB_M40A3_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + m40a3_marksman, TB_M40A3_M.Text, e);
         }
 
-        private void textBox10_KeyDown(object sender, KeyEventArgs e)
+        private void TB_M40A3_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + m40a3_expert, TB_M40A3_E.Text, e);
         }
 
-        private void textBox9_KeyDown(object sender, KeyEventArgs e)
+        private void TB_M21_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + m21_marksman, TB_M21_M.Text, e);
         }
 
-        private void textBox8_KeyDown(object sender, KeyEventArgs e)
+        private void TB_M21_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + m21_expert, TB_M21_E.Text, e);
         }
 
-        private void textBox7_KeyDown(object sender, KeyEventArgs e)
+        private void TB_DRAGUNOV_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + dragunov_marksman, TB_DRAGUNOV_M.Text, e);
         }
 
-        private void textBox6_KeyDown(object sender, KeyEventArgs e)
+        private void TB_DRAGUNOV_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + dragunov_expert, TB_DRAGUNOV_E.Text, e);
         }
 
-        private void textBox5_KeyDown(object sender, KeyEventArgs e)
+        private void TB_R700_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + r700_marksman, TB_R700_M.Text, e);
         }
 
-        private void textBox4_KeyDown(object sender, KeyEventArgs e)
+        private void TB_R700_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + r700_expert, TB_R700_E.Text, e);
         }
 
-        private void textBox3_KeyDown(object sender, KeyEventArgs e)
+        private void TB_BARRET_M_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + barrett_marksman, TB_BARRET_M.Text, e);
         }
 
-        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        private void TB_BARRET_E_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                MessageBox.Show("Enter Pressed");
-            }
+            ValidateAndWriteToMemory(BaseAddress + barret_expert, TB_BARRET_E.Text, e);
         }
     }
 }
