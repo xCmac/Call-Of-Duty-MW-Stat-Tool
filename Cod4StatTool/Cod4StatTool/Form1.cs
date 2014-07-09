@@ -254,217 +254,217 @@ namespace Cod4StatTool
 
         private void TB_M16_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m16_marksman, TB_M16_M.Text, e);
+            ValidateAndWriteToMemory(m16_marksman, TB_M16_M.Text, e);
         }
 
         private void TB_M16_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m16_expert, TB_M16_E.Text, e);
+            ValidateAndWriteToMemory(m16_expert, TB_M16_E.Text, e);
         }
 
         private void TB_AK47_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + ak47_marksman, TB_AK47_M.Text, e);
+            ValidateAndWriteToMemory(ak47_marksman, TB_AK47_M.Text, e);
         }
 
         private void TB_AK47_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + ak47_expert, TB_AK47_E.Text, e);
+            ValidateAndWriteToMemory(ak47_expert, TB_AK47_E.Text, e);
         }
 
         private void TB_G3_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + g3_marksman, TB_G3_M.Text, e);
+            ValidateAndWriteToMemory(g3_marksman, TB_G3_M.Text, e);
         }
 
         private void TB_G3_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + g3_expert, TB_G3_E.Text, e);
+            ValidateAndWriteToMemory(g3_expert, TB_G3_E.Text, e);
         }
 
         private void TB_M4_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m4_marksman, TB_M4_M.Text, e);
+            ValidateAndWriteToMemory(m4_marksman, TB_M4_M.Text, e);
         }
 
         private void TB_M4_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m4_expert, TB_M4_E.Text, e);
+            ValidateAndWriteToMemory(m4_expert, TB_M4_E.Text, e);
         }
 
         private void TB_M14_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m14_marksman, TB_M14_M.Text, e);
+            ValidateAndWriteToMemory(m14_marksman, TB_M14_M.Text, e);
         }
 
         private void TB_M14_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m14_expert, TB_M14_E.Text, e);
+            ValidateAndWriteToMemory(m14_expert, TB_M14_E.Text, e);
         }
 
         private void TB_G36C_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + g36c_marksman, TB_G36C_M.Text, e);
+            ValidateAndWriteToMemory(g36c_marksman, TB_G36C_M.Text, e);
         }
 
         private void TB_G36C_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + g36c_expert, TB_G36C_E.Text, e);
+            ValidateAndWriteToMemory(g36c_expert, TB_G36C_E.Text, e);
         }
 
         private void TB_MP44_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + mp44_expert, TB_MP44_E.Text, e);
+            ValidateAndWriteToMemory(mp44_expert, TB_MP44_E.Text, e);
         }
 
         private void TB_MP5_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + mp5_marksman, TB_MP5_M.Text, e);
+            ValidateAndWriteToMemory(mp5_marksman, TB_MP5_M.Text, e);
         }
 
         private void TB_MP5_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + mp5_expert, TB_MP5_E.Text, e);
+            ValidateAndWriteToMemory(mp5_expert, TB_MP5_E.Text, e);
         }
 
         private void TB_SKORP_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + skorpion_marksman, TB_SKORP_M.Text, e);
+            ValidateAndWriteToMemory(skorpion_marksman, TB_SKORP_M.Text, e);
         }
 
         private void TB_SKORP_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + skorpion_expert, TB_SKORP_E.Text, e);
+            ValidateAndWriteToMemory(skorpion_expert, TB_SKORP_E.Text, e);
         }
 
         private void TB_UZI_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + miniuzi_marksman, TB_UZI_M.Text, e);
+            ValidateAndWriteToMemory(miniuzi_marksman, TB_UZI_M.Text, e);
         }
 
         private void TB_UZI_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + miniuzi_expert, TB_UZI_E.Text, e);
+            ValidateAndWriteToMemory(miniuzi_expert, TB_UZI_E.Text, e);
         }
 
         private void TB_AK47U_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + ak74u_marksman, TB_AK47U_M.Text, e);
+            ValidateAndWriteToMemory(ak74u_marksman, TB_AK47U_M.Text, e);
         }
 
         private void TB_AK47U_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + aK74u_expert, TB_AK47U_E.Text, e);
+            ValidateAndWriteToMemory(aK74u_expert, TB_AK47U_E.Text, e);
         }
 
         private void TB_P90_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + p90_marksman, TB_P90_M.Text, e);
+            ValidateAndWriteToMemory(p90_marksman, TB_P90_M.Text, e);
         }
 
         private void TB_P90_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + p90_expert, TB_P90_E.Text, e);
+            ValidateAndWriteToMemory(p90_expert, TB_P90_E.Text, e);
         }
 
         private void TB_M249_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m249_marksman, TB_M249_M.Text, e);
+            ValidateAndWriteToMemory(m249_marksman, TB_M249_M.Text, e);
         }
 
         private void TB_M249_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m249_expert, TB_M249_E.Text, e);
+            ValidateAndWriteToMemory(m249_expert, TB_M249_E.Text, e);
         }
 
         private void TB_RPD_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + rpd_marksman, TB_RPD_M.Text, e);
+            ValidateAndWriteToMemory(rpd_marksman, TB_RPD_M.Text, e);
         }
 
         private void TB_RPD_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + rpd_expert, TB_RPD_E.Text, e);
+            ValidateAndWriteToMemory(rpd_expert, TB_RPD_E.Text, e);
         }
 
         private void TB_M60E4_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m60e4_marksman, TB_M60E4_M.Text, e);
+            ValidateAndWriteToMemory(m60e4_marksman, TB_M60E4_M.Text, e);
         }
 
         private void TB_M60E4_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m60e4_expert, TB_M60E4_E.Text, e);
+            ValidateAndWriteToMemory(m60e4_expert, TB_M60E4_E.Text, e);
         }
 
         private void TB_W1200_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + w1200_marksman, TB_W1200_M.Text, e);
+            ValidateAndWriteToMemory(w1200_marksman, TB_W1200_M.Text, e);
         }
 
         private void TB_W1200_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + w1200_expert, TB_W1200_E.Text, e);
+            ValidateAndWriteToMemory(w1200_expert, TB_W1200_E.Text, e);
         }
 
         private void TB_M1014_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m1014_marksman, TB_M1014_M.Text, e);
+            ValidateAndWriteToMemory(m1014_marksman, TB_M1014_M.Text, e);
         }
 
         private void TB_M1014_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m1014_expert, TB_M1014_E.Text, e);
+            ValidateAndWriteToMemory(m1014_expert, TB_M1014_E.Text, e);
         }
 
         private void TB_M40A3_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m40a3_marksman, TB_M40A3_M.Text, e);
+            ValidateAndWriteToMemory(m40a3_marksman, TB_M40A3_M.Text, e);
         }
 
         private void TB_M40A3_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m40a3_expert, TB_M40A3_E.Text, e);
+            ValidateAndWriteToMemory(m40a3_expert, TB_M40A3_E.Text, e);
         }
 
         private void TB_M21_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m21_marksman, TB_M21_M.Text, e);
+            ValidateAndWriteToMemory(m21_marksman, TB_M21_M.Text, e);
         }
 
         private void TB_M21_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + m21_expert, TB_M21_E.Text, e);
+            ValidateAndWriteToMemory(m21_expert, TB_M21_E.Text, e);
         }
 
         private void TB_DRAGUNOV_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + dragunov_marksman, TB_DRAGUNOV_M.Text, e);
+            ValidateAndWriteToMemory(dragunov_marksman, TB_DRAGUNOV_M.Text, e);
         }
 
         private void TB_DRAGUNOV_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + dragunov_expert, TB_DRAGUNOV_E.Text, e);
+            ValidateAndWriteToMemory(dragunov_expert, TB_DRAGUNOV_E.Text, e);
         }
 
         private void TB_R700_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + r700_marksman, TB_R700_M.Text, e);
+            ValidateAndWriteToMemory(r700_marksman, TB_R700_M.Text, e);
         }
 
         private void TB_R700_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + r700_expert, TB_R700_E.Text, e);
+            ValidateAndWriteToMemory(r700_expert, TB_R700_E.Text, e);
         }
 
         private void TB_BARRET_M_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + barrett_marksman, TB_BARRET_M.Text, e);
+            ValidateAndWriteToMemory(barrett_marksman, TB_BARRET_M.Text, e);
         }
 
         private void TB_BARRET_E_KeyDown(object sender, KeyEventArgs e)
         {
-            ValidateAndWriteToMemory(BaseAddress + barret_expert, TB_BARRET_E.Text, e);
+            ValidateAndWriteToMemory(barret_expert, TB_BARRET_E.Text, e);
         }
     }
 }
