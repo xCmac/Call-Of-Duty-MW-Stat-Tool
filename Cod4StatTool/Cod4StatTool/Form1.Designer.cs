@@ -229,7 +229,7 @@
             this.ChallengeTabs.Multiline = true;
             this.ChallengeTabs.Name = "ChallengeTabs";
             this.ChallengeTabs.SelectedIndex = 0;
-            this.ChallengeTabs.Size = new System.Drawing.Size(329, 420);
+            this.ChallengeTabs.Size = new System.Drawing.Size(364, 420);
             this.ChallengeTabs.TabIndex = 5;
             // 
             // Tab_Assault
@@ -277,7 +277,7 @@
             this.Tab_Assault.Location = new System.Drawing.Point(4, 22);
             this.Tab_Assault.Name = "Tab_Assault";
             this.Tab_Assault.Padding = new System.Windows.Forms.Padding(3);
-            this.Tab_Assault.Size = new System.Drawing.Size(321, 394);
+            this.Tab_Assault.Size = new System.Drawing.Size(356, 394);
             this.Tab_Assault.TabIndex = 0;
             this.Tab_Assault.Text = "Assault";
             // 
@@ -943,7 +943,7 @@
             this.Tab_LMG.Controls.Add(this.Lable_M249_M);
             this.Tab_LMG.Location = new System.Drawing.Point(4, 22);
             this.Tab_LMG.Name = "Tab_LMG";
-            this.Tab_LMG.Size = new System.Drawing.Size(321, 394);
+            this.Tab_LMG.Size = new System.Drawing.Size(356, 394);
             this.Tab_LMG.TabIndex = 2;
             this.Tab_LMG.Text = "LMG";
             this.Tab_LMG.UseVisualStyleBackColor = true;
@@ -953,7 +953,7 @@
             this.TB_M249_E.Location = new System.Drawing.Point(231, 40);
             this.TB_M249_E.Name = "TB_M249_E";
             this.TB_M249_E.Size = new System.Drawing.Size(100, 20);
-            this.TB_M249_E.TabIndex = 53;
+            this.TB_M249_E.TabIndex = 1;
             this.TB_M249_E.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_M249_E_KeyDown);
             // 
             // TB_RPD_M
@@ -961,7 +961,7 @@
             this.TB_RPD_M.Location = new System.Drawing.Point(231, 74);
             this.TB_RPD_M.Name = "TB_RPD_M";
             this.TB_RPD_M.Size = new System.Drawing.Size(100, 20);
-            this.TB_RPD_M.TabIndex = 52;
+            this.TB_RPD_M.TabIndex = 2;
             this.TB_RPD_M.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_RPD_M_KeyDown);
             // 
             // TB_RPD_E
@@ -969,7 +969,7 @@
             this.TB_RPD_E.Location = new System.Drawing.Point(231, 98);
             this.TB_RPD_E.Name = "TB_RPD_E";
             this.TB_RPD_E.Size = new System.Drawing.Size(100, 20);
-            this.TB_RPD_E.TabIndex = 51;
+            this.TB_RPD_E.TabIndex = 3;
             this.TB_RPD_E.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_RPD_E_KeyDown);
             // 
             // TB_M60E4_M
@@ -977,7 +977,7 @@
             this.TB_M60E4_M.Location = new System.Drawing.Point(231, 131);
             this.TB_M60E4_M.Name = "TB_M60E4_M";
             this.TB_M60E4_M.Size = new System.Drawing.Size(100, 20);
-            this.TB_M60E4_M.TabIndex = 50;
+            this.TB_M60E4_M.TabIndex = 4;
             this.TB_M60E4_M.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_M60E4_M_KeyDown);
             // 
             // TB_M60E4_E
@@ -985,7 +985,7 @@
             this.TB_M60E4_E.Location = new System.Drawing.Point(231, 155);
             this.TB_M60E4_E.Name = "TB_M60E4_E";
             this.TB_M60E4_E.Size = new System.Drawing.Size(100, 20);
-            this.TB_M60E4_E.TabIndex = 49;
+            this.TB_M60E4_E.TabIndex = 5;
             this.TB_M60E4_E.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_M60E4_E_KeyDown);
             // 
             // TB_M249_M
@@ -993,7 +993,7 @@
             this.TB_M249_M.Location = new System.Drawing.Point(231, 16);
             this.TB_M249_M.Name = "TB_M249_M";
             this.TB_M249_M.Size = new System.Drawing.Size(100, 20);
-            this.TB_M249_M.TabIndex = 48;
+            this.TB_M249_M.TabIndex = 0;
             this.TB_M249_M.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_M249_M_KeyDown);
             // 
             // Current_RPD_M
@@ -1132,7 +1132,7 @@
             this.Tab_Shotgun.Controls.Add(this.Label_W1200_M);
             this.Tab_Shotgun.Location = new System.Drawing.Point(4, 22);
             this.Tab_Shotgun.Name = "Tab_Shotgun";
-            this.Tab_Shotgun.Size = new System.Drawing.Size(321, 394);
+            this.Tab_Shotgun.Size = new System.Drawing.Size(356, 394);
             this.Tab_Shotgun.TabIndex = 3;
             this.Tab_Shotgun.Text = "Shotgun";
             this.Tab_Shotgun.UseVisualStyleBackColor = true;
@@ -1142,7 +1142,7 @@
             this.TB_W1200_M.Location = new System.Drawing.Point(213, 14);
             this.TB_W1200_M.Name = "TB_W1200_M";
             this.TB_W1200_M.Size = new System.Drawing.Size(100, 20);
-            this.TB_W1200_M.TabIndex = 53;
+            this.TB_W1200_M.TabIndex = 0;
             this.TB_W1200_M.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_W1200_M_KeyDown);
             // 
             // TB_W1200_E
@@ -1150,7 +1150,7 @@
             this.TB_W1200_E.Location = new System.Drawing.Point(213, 38);
             this.TB_W1200_E.Name = "TB_W1200_E";
             this.TB_W1200_E.Size = new System.Drawing.Size(100, 20);
-            this.TB_W1200_E.TabIndex = 52;
+            this.TB_W1200_E.TabIndex = 1;
             this.TB_W1200_E.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_W1200_E_KeyDown);
             // 
             // TB_M1014_M
@@ -1158,7 +1158,7 @@
             this.TB_M1014_M.Location = new System.Drawing.Point(213, 71);
             this.TB_M1014_M.Name = "TB_M1014_M";
             this.TB_M1014_M.Size = new System.Drawing.Size(100, 20);
-            this.TB_M1014_M.TabIndex = 51;
+            this.TB_M1014_M.TabIndex = 2;
             this.TB_M1014_M.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_M1014_M_KeyDown);
             // 
             // TB_M1014_E
@@ -1166,7 +1166,7 @@
             this.TB_M1014_E.Location = new System.Drawing.Point(213, 95);
             this.TB_M1014_E.Name = "TB_M1014_E";
             this.TB_M1014_E.Size = new System.Drawing.Size(100, 20);
-            this.TB_M1014_E.TabIndex = 50;
+            this.TB_M1014_E.TabIndex = 3;
             this.TB_M1014_E.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_M1014_E_KeyDown);
             // 
             // Current_W1200_M
@@ -1283,7 +1283,7 @@
             this.Tab_Sniper.Controls.Add(this.Label_BARRET_E);
             this.Tab_Sniper.Location = new System.Drawing.Point(4, 22);
             this.Tab_Sniper.Name = "Tab_Sniper";
-            this.Tab_Sniper.Size = new System.Drawing.Size(321, 394);
+            this.Tab_Sniper.Size = new System.Drawing.Size(356, 394);
             this.Tab_Sniper.TabIndex = 4;
             this.Tab_Sniper.Text = "Sniper";
             this.Tab_Sniper.UseVisualStyleBackColor = true;
@@ -1293,7 +1293,7 @@
             this.TB_M40A3_E.Location = new System.Drawing.Point(257, 38);
             this.TB_M40A3_E.Name = "TB_M40A3_E";
             this.TB_M40A3_E.Size = new System.Drawing.Size(74, 20);
-            this.TB_M40A3_E.TabIndex = 63;
+            this.TB_M40A3_E.TabIndex = 1;
             this.TB_M40A3_E.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_M40A3_E_KeyDown);
             // 
             // TB_M21_M
@@ -1301,7 +1301,7 @@
             this.TB_M21_M.Location = new System.Drawing.Point(257, 71);
             this.TB_M21_M.Name = "TB_M21_M";
             this.TB_M21_M.Size = new System.Drawing.Size(74, 20);
-            this.TB_M21_M.TabIndex = 62;
+            this.TB_M21_M.TabIndex = 2;
             this.TB_M21_M.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_M21_M_KeyDown);
             // 
             // TB_M21_E
@@ -1309,7 +1309,7 @@
             this.TB_M21_E.Location = new System.Drawing.Point(257, 95);
             this.TB_M21_E.Name = "TB_M21_E";
             this.TB_M21_E.Size = new System.Drawing.Size(74, 20);
-            this.TB_M21_E.TabIndex = 61;
+            this.TB_M21_E.TabIndex = 3;
             this.TB_M21_E.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_M21_E_KeyDown);
             // 
             // TB_DRAGUNOV_M
@@ -1317,7 +1317,7 @@
             this.TB_DRAGUNOV_M.Location = new System.Drawing.Point(257, 128);
             this.TB_DRAGUNOV_M.Name = "TB_DRAGUNOV_M";
             this.TB_DRAGUNOV_M.Size = new System.Drawing.Size(74, 20);
-            this.TB_DRAGUNOV_M.TabIndex = 60;
+            this.TB_DRAGUNOV_M.TabIndex = 4;
             this.TB_DRAGUNOV_M.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_DRAGUNOV_M_KeyDown);
             // 
             // TB_DRAGUNOV_E
@@ -1325,7 +1325,7 @@
             this.TB_DRAGUNOV_E.Location = new System.Drawing.Point(257, 152);
             this.TB_DRAGUNOV_E.Name = "TB_DRAGUNOV_E";
             this.TB_DRAGUNOV_E.Size = new System.Drawing.Size(74, 20);
-            this.TB_DRAGUNOV_E.TabIndex = 59;
+            this.TB_DRAGUNOV_E.TabIndex = 5;
             this.TB_DRAGUNOV_E.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_DRAGUNOV_E_KeyDown);
             // 
             // TB_R700_M
@@ -1333,7 +1333,7 @@
             this.TB_R700_M.Location = new System.Drawing.Point(257, 185);
             this.TB_R700_M.Name = "TB_R700_M";
             this.TB_R700_M.Size = new System.Drawing.Size(74, 20);
-            this.TB_R700_M.TabIndex = 58;
+            this.TB_R700_M.TabIndex = 6;
             this.TB_R700_M.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_R700_M_KeyDown);
             // 
             // TB_R700_E
@@ -1341,7 +1341,7 @@
             this.TB_R700_E.Location = new System.Drawing.Point(257, 209);
             this.TB_R700_E.Name = "TB_R700_E";
             this.TB_R700_E.Size = new System.Drawing.Size(74, 20);
-            this.TB_R700_E.TabIndex = 57;
+            this.TB_R700_E.TabIndex = 7;
             this.TB_R700_E.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_R700_E_KeyDown);
             // 
             // TB_BARRET_M
@@ -1349,7 +1349,7 @@
             this.TB_BARRET_M.Location = new System.Drawing.Point(257, 242);
             this.TB_BARRET_M.Name = "TB_BARRET_M";
             this.TB_BARRET_M.Size = new System.Drawing.Size(74, 20);
-            this.TB_BARRET_M.TabIndex = 56;
+            this.TB_BARRET_M.TabIndex = 8;
             this.TB_BARRET_M.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_BARRET_M_KeyDown);
             // 
             // TB_BARRET_E
@@ -1357,7 +1357,7 @@
             this.TB_BARRET_E.Location = new System.Drawing.Point(257, 266);
             this.TB_BARRET_E.Name = "TB_BARRET_E";
             this.TB_BARRET_E.Size = new System.Drawing.Size(74, 20);
-            this.TB_BARRET_E.TabIndex = 55;
+            this.TB_BARRET_E.TabIndex = 9;
             this.TB_BARRET_E.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_BARRET_E_KeyDown);
             // 
             // TB_M40A3_M
@@ -1365,7 +1365,7 @@
             this.TB_M40A3_M.Location = new System.Drawing.Point(257, 14);
             this.TB_M40A3_M.Name = "TB_M40A3_M";
             this.TB_M40A3_M.Size = new System.Drawing.Size(74, 20);
-            this.TB_M40A3_M.TabIndex = 54;
+            this.TB_M40A3_M.TabIndex = 0;
             this.TB_M40A3_M.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_M40A3_M_KeyDown);
             // 
             // Current_BARRET_M
@@ -1578,7 +1578,7 @@
             // 
             this.ReadMemoryButton.Location = new System.Drawing.Point(12, 438);
             this.ReadMemoryButton.Name = "ReadMemoryButton";
-            this.ReadMemoryButton.Size = new System.Drawing.Size(329, 49);
+            this.ReadMemoryButton.Size = new System.Drawing.Size(364, 49);
             this.ReadMemoryButton.TabIndex = 38;
             this.ReadMemoryButton.Text = "Read Memory";
             this.ReadMemoryButton.UseVisualStyleBackColor = true;
@@ -1590,7 +1590,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(353, 503);
+            this.ClientSize = new System.Drawing.Size(388, 503);
             this.Controls.Add(this.ReadMemoryButton);
             this.Controls.Add(this.ChallengeTabs);
             this.Name = "Form1";

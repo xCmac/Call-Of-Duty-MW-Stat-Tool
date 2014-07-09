@@ -181,9 +181,12 @@ namespace Cod4StatTool
             catch (Exception exception)
             {
                 MessageBox.Show("Could not read process " + exception.Message);
+                gamefound = false;
             }
-
-            ReadMemoryButton.Enabled = false;
+            if(gamefound)
+            {
+                ReadMemoryButton.Enabled = false;
+            }            
         }
 
         private void SetUpChallengeAddresses()
